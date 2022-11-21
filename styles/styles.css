@@ -442,7 +442,6 @@ nav .nav-button {
   bottom: 0;
   left: 0;
   width: 100%;
-  bottom: -1px;
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
@@ -803,7 +802,6 @@ footer{
   position: absolute;
   display: flex;
   justify-content: flex-end;
-  margin-top: -1px;
   top: 0;
 
 }
@@ -823,7 +821,6 @@ footer{
 .vervoerregio-path-footer{
   width: 6rem;
   height: 3rem;
-  margin-right: -1px;
   background-color: #fff;
   /* clip-path: url(./the-client-case/assets/svg-path.svg); */
   clip-path: path('M 96 0 L 0 0 C 48 0 48 48 96 48');
