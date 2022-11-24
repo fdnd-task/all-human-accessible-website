@@ -27,3 +27,8 @@
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
 
 This work is licensed under [GNU GPLv3](./LICENSE).
+
+<br><br><br>
+## Mijn website
+<br>
+<img width="720" alt="image" src="https://user-images.githubusercontent.com/112861160/203871665-1043eac8-0220-4824-b90d-fe79747e6cbd.png">
