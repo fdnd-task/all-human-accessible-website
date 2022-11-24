@@ -131,7 +131,7 @@
       </section>
 
       <section class="header-style-image">
-        <img src="assets/illustraties/header-img.svg" alt="Dame in een rolstoel">
+        <img src="assets/illustraties/header-img.svg" aria-hidden="true" alt="Dame in een rolstoel">
       </section>
     </section>
 
@@ -173,7 +173,7 @@
               laoreet dolore magna aliquam Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
               nibh euismod tincidunt ut laoreet dolore magna aliquam </p>
           </div>
-          <div> <img src="assets/illustraties/checklist-img.svg" alt="checklist"> </div>
+          <div> <img src="assets/illustraties/checklist-img.svg" alt="checklist" aria-hidden="true"> </div>
         </a> </div>
     </section>
   </main>
@@ -185,9 +185,10 @@
       <div class="responsive-width-footer"></div>
     </section>
     <Section class="footer-content">
-        <div class="regio-logo"> <img src="assets/illustraties/vervoerregio's.svg"
-            alt="alle regios van vervoerregio amsterdam"> </div>
-        <div class="contact">
+      <div class="regio-logo"> <img src="assets/illustraties/vervoerregio's.svg"
+          alt="alle regios van vervoerregio amsterdam" aria-hidden="true"> </div>
+      <div class="contact">
+        <div>
           <h4>Contact</h4>
           <ul class="ul-footer">
             <li>Vervoerregio<br> Jodenbreestraat 25<br> 1011 NH Amsterdam</li>
@@ -197,19 +198,28 @@
             <li>Aanmelden Nieuwsbrief</li>
           </ul>
         </div>
+      </div>
       <div class="footer-bericht">
         <h4>Verstuur een bericht</h4>
         <form action="/action_page.php">
           <div class="footer-naam-form">
-            <div><label>Voornaam</label><input type="text" id="fname" name="firstname" placeholder="Sascha"></div>
-            <div><label>achternaam</label><input type="text" id="lname" name="lastname" placeholder="Davidson"></div>
-          </div> <label>emain</label><input type="email" id="mail" name="email" placeholder="info@vervoer.com">
-          <label>Bericht</label><textarea placeholder="Berijk ons met al je vragen"></textarea> <input type="submit"
-            value="Submit">
+            <label>Voornaam<input type="text" id="fname" name="firstname" placeholder="Sascha"></label>
+            <label>achternaam<input type="text" id="lname" name="lastname" placeholder="Davidson"></label>
+          </div>
+          <label>Bericht</label><textarea placeholder="Berijk ons met al je vragen"></textarea>
+          <input type="submit" value="Submit">
         </form>
       </div>
     </Section>
-    <section class="sub-footer"> </section>
+    <section class="sub-footer">
+      <p>© Copyright 2022 Vervoerregio Amsterdam</p>
+        <ul>
+          <li>Algemene voorwaarden</li>
+          <li>Disclaimer</li>
+          <li>Privacyverklaring</li>
+          <li>Cookieverklaring</li>
+        </ul>
+    </section>
   </footer>
 
   <script src="scripts/script.js" charset="utf-8"></script>
