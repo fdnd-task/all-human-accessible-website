@@ -30,5 +30,15 @@ This work is licensed under [GNU GPLv3](./LICENSE).
 
 <br><br><br>
 ## Mijn website
+
+Dit is hoe mijn website er nu uit ziet met de laatste veranderingen
 <br>
 <img width="720" alt="image" src="https://user-images.githubusercontent.com/112861160/203871665-1043eac8-0220-4824-b90d-fe79747e6cbd.png">
+
+<br>
+
+Dit is hoe mijn website er uit zien op een mobile screen (is nieuw gemaakt/toegevoegd)
+
+![image](https://user-images.githubusercontent.com/112861160/204011551-811dafd8-bf99-4d25-abc1-7fe89930fae1.png)
+
+![image](https://user-images.githubusercontent.com/112861160/204011631-c454a631-b494-4a3f-bb78-df0e4ad1d6ef.png)
