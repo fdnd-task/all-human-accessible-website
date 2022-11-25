@@ -2,6 +2,20 @@
 
 /* HTML */
 
+:root {
+  --yello: #FFd05f;
+  --light-blue: #45becd;
+  --green: #25ae93;
+  --blue: #606eb3;
+
+  --magenta: #e30059;
+  --dark-magenta: #B9005f;
+
+  --white: #fff;
+  --black: #000;
+
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -153,7 +167,7 @@ header {
   .burger div {
     width: 25px;
     height: 3px;
-    background-color: black;
+    background-color: var(--black);
     margin: 5px;
     transition: all 0.3s ease;
   }
@@ -221,13 +235,13 @@ nav {
   }
 
   .main-nav a {
-    color: black;
+    color: var(--black);
     text-decoration: none;
     font-size: 1rem;
   }
 
   .main-nav a:hover {
-    color: #b9005f;
+    color: var(--magenta);
   }
 
   .nav-button {
@@ -263,7 +277,7 @@ nav {
   height: 40px;
   width: 40px;
   overflow: hidden;
-  background: #fff;
+  background: var(--white);
   border-radius: 50px;
   cursor: pointer;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
@@ -319,7 +333,7 @@ nav {
 
 .socialmedias-button .button:hover .icon i,
 .socialmedias-button .button:focus .icon i {
-  color: #fff;
+  color: var(--white);
 }
 
 .socialmedias-button .button span {
@@ -351,7 +365,7 @@ nav {
 
 .socialmedias-button .button {
   text-decoration: none;
-  color: #b9005f;
+  color: var(--magenta);
 }
 
 /* hoofd img */
@@ -363,9 +377,9 @@ nav {
   position: relative;
   padding-top: 3rem;
   z-index: 1;
-  color: #fff;
-  background: rgb(185, 0, 95);
-  background: linear-gradient( 332deg, rgba(185, 0, 95, 1) 0%, rgba(227, 0, 89, 1) 100% );
+  color: var(--white);
+  background: var(--magenta);
+  background: linear-gradient( 332deg, var(--dark-magenta) 0%, var(--magenta) 100% );
 }
 
 /* volgende drie zijn de curve van huistyle*/
@@ -380,13 +394,13 @@ nav {
 .responsive-width {
   width: 5%;
   height: 100%;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .logo-width {
   width: 7rem;
   height: 100%;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .header-style-content {
@@ -421,7 +435,7 @@ nav {
 }
 
 .custom-shape-divider-bottom-1666903128 .shape-fill {
-  fill: #ffffff;
+  fill: var(--white);
 }
 
 @media screen and (min-width: 630px) {
@@ -483,11 +497,11 @@ nav {
   padding-top: 3rem;
 
   margin-top: -3.3rem;
-  background: rgb(185, 0, 95);
+  background: var(--magenta);
   background: linear-gradient(
     332deg,
-    rgba(185, 0, 95, 1) 0%,
-    rgba(227, 0, 89, 1) 100%
+    var(--dark-magenta) 0%,
+    var(--magenta) 100%
   );
 }
 
@@ -511,7 +525,7 @@ main {
 
 .informatie-box {
   width: 100%;
-  color: black;
+  color: var(--black);
   text-decoration: none;
   padding: 1rem 2rem;
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
@@ -523,10 +537,10 @@ main {
 .informatie-box:hover {
   background: linear-gradient(
     332deg,
-    rgba(185, 0, 95, 1) 0%,
-    rgba(227, 0, 89, 1) 100%
+    var(--dark-magenta) 0%,
+    var(--magenta) 100%
   );
-  color: #fff;
+  color: var(--white);
 }
 
 .informatie-box img {
@@ -538,7 +552,7 @@ main {
   flex-wrap: wrap;
   align-items: center;
   gap: 2.5rem;
-  color: black;
+  color: var(--black);
   text-decoration: none;
 
   padding: 1rem 2rem;
@@ -550,10 +564,10 @@ main {
 .checklist-box:hover {
   background: linear-gradient(
     332deg,
-    rgba(185, 0, 95, 1) 0%,
-    rgba(227, 0, 89, 1) 100%
+    var(--dark-magenta) 0%,
+    var(--magenta) 100%
   );
-  color: #fff;
+  color: var(--white);
 }
 
 .checklist-box img {
@@ -577,7 +591,7 @@ main {
 
 .ankerpoint a {
   font-weight: 500;
-  color: black;
+  color: var(--black);
   text-decoration: none;
 }
 
@@ -594,7 +608,7 @@ main {
 }
 
 .ankerpoint ul a:hover {
-  color: #b9005f;
+  color: var(--magenta);
 }
 
 @media screen and (min-width: 600px) {
@@ -632,7 +646,7 @@ details {
   margin-bottom: 1rem;
   border-radius: 10px;
   box-shadow: 0px 0px 20px #0022;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 details [open] {
@@ -642,21 +656,21 @@ details [open] {
 details > summary {
   background: linear-gradient(
     332deg,
-    rgba(185, 0, 95, 1) 0%,
-    rgba(227, 0, 89, 1) 100%
+    var(--dark-magenta) 0%,
+    var(--magenta) 100%
   );
-  color: #fff;
+  color: var(--white);
   border-radius: 10px;
   padding: 1rem;
 }
 
 details summary h3 {
-  color: #fff;
+  color: var(--white);
 }
 
 details[open] > summary {
-  background-color: #b9005f;
-  color: white;
+  background-color: var(--magenta);
+  color: var(--white);
   padding: 1rem;
   border-radius: 10px 10px 0 0;
 }
@@ -680,7 +694,7 @@ input[type="checkbox"] {
   transition: box-shadow 0.3s;
   box-shadow: 0px 0px 100px #0022;
   border-radius: 10px;
-  background: #fff;
+  background: var(--white);
   cursor: pointer;
   border: 0;
   appearance: none;
@@ -707,10 +721,10 @@ input:checked {
   width: auto;
   padding: 1rem;
   margin: 1rem 1rem 0 0;
-  background-color: #b9005f;
+  background-color: var(--magenta);
   border: none;
   font-size: 1rem;
-  color: #fff;
+  color: var(--white);
   border-radius: 10px;
   cursor: pointer;
 }
@@ -724,10 +738,10 @@ input:checked {
 
 footer {
 
-  background: rgb(185, 0, 95);
-  background: linear-gradient( 332deg, rgba(185, 0, 95, 1) 0%, rgba(227, 0, 89, 1) 100% );
+  background: var(--magenta);
+  background: linear-gradient( 332deg, var(--dark-magenta) 0%, var(--magenta) 100% );
   position: relative;
-  color: #fff;
+  color: var(--white);
 }
 
 .footer-content {
@@ -763,19 +777,19 @@ footer {
 .responsive-width-footer {
   width: 10%;
   height: 3rem;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .width-footer {
   width: 40%;
   height: 3rem;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .vervoerregio-path-footer {
   width: 6rem;
   height: 3rem;
-  background-color: #fff;
+  background-color: var(--white);
   /* clip-path: url(./the-client-case/assets/svg-path.svg); */
   clip-path: path("M 96 0 L 0 0 C 48 0 48 48 96 48");
   /* clip-path: ellipse(20px 20px at 20% 20%); */
@@ -835,8 +849,8 @@ textarea {
   font-size: 1.1rem;
 }
 .footer-bericht input[type=submit] {
-  background-color: #fff;
-  color: #e30059;
+  background-color: var(--white);
+  color: var(--magenta);
   padding: 8px 1rem;
   margin: 8px 0;
   border: none;
@@ -845,13 +859,14 @@ textarea {
   font-size: 1rem;
   font-weight: 600;
   text-align: left;
-  border: 4px solid white;
+  border: 4px solid var(--white);
+  transition: 0.5s;
 
 }
 
 .footer-bericht input[type="submit"]:hover {
-border: 4px solid white;
-color: white;
+border: 4px solid var(--white);
+color: var(--white);
 background-color: transparent;
 }
 
@@ -867,26 +882,28 @@ background-color: transparent;
   padding-bottom: 1rem;
 }
 
-.sub-footer li {
+.sub-footer a{
   padding: 0.5rem;
   margin: 0.5rem;
   display: block;
-
+  color: var(--white);
   text-decoration: none;
   cursor: pointer;
+  transition: 0.3s;
+
 }
 
-.sub-footer li:hover {
-font-size: 1.3rem;
+.sub-footer a:hover, a:focus {
+font-size: 1.2rem;
 font-weight: 600;
 margin: 0;
 
 }
 
+
 @media screen and (min-width: 1170px) {
   .sub-footer {
     display: flex;
-    flex-direction: ;
   }
 
   .sub-footer p{
