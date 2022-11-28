@@ -39,6 +39,4 @@ Dit is hoe mijn website er nu uit ziet met de laatste veranderingen
 
 Dit is hoe mijn website er uit zien op een mobile screen (is nieuw gemaakt/toegevoegd)
 
-![image](https://user-images.githubusercontent.com/112861160/204011551-811dafd8-bf99-4d25-abc1-7fe89930fae1.png)
-
-![image](https://user-images.githubusercontent.com/112861160/204011631-c454a631-b494-4a3f-bb78-df0e4ad1d6ef.png)
+<img src="https://user-images.githubusercontent.com/112861160/204240942-a4d3113b-483f-4715-8413-4e7a52009f8f.png" width="33%" min-width="200px"><img src="https://user-images.githubusercontent.com/112861160/204241243-fa997bc3-ef4b-45dc-ad63-f90785c3adff.png" width="33%" min-width="200px"><img src="https://user-images.githubusercontent.com/112861160/204241394-c7bfcda2-a1d5-42c0-b7ef-52fcc435ec6f.png" width="33%" max-width="200px">
