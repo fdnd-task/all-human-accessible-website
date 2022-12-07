@@ -25,14 +25,14 @@ body {
   font-family: "fira-sans", sans-serif;
   max-width: 1920px;
   margin: 0 auto;
-
+  line-height: 1.4;
 }
 
 h1 {
   font-size: 2rem;
   font-weight: 400;
   display: inline-block;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
 }
 
 strong {
@@ -55,11 +55,10 @@ h3 {
 h4 {
   font-size: 1.8rem;
   font-weight: 600;
-  margin-bottom: 1rem;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
 
 @media screen and (min-width: 500px) {
@@ -107,6 +106,12 @@ p {
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 1rem;
+  }
+
+  h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 2rem 0 0 0;
   }
 }
 
@@ -241,11 +246,11 @@ nav {
   nav .main-nav li a {
     color: var(--black);
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.125rem;
     display: inline-block;
     transition: all 0.3s ease-in-out;
-    padding: 0.5rem 6px;
-    margin: 0.5rem 0;
+    padding: 0.3rem 6px;
+    margin: 0.7rem 0;
   }
 
   nav .main-nav li a:hover,
@@ -253,8 +258,7 @@ nav {
     color: var(--magenta);
     transform: scale(1.2);
     font-weight: 500;
-    padding: 0.5rem 6px;
-    margin: 0.5rem 0;
+
   }
 
   .nav-button {
@@ -283,14 +287,28 @@ nav {
   height: 95vh;
   position: relative;
   z-index: 1;
-  max-height: 800px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  max-height: 1080px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
     url("../assets/vervoerregio-amsterdam-header.jpg");
   background-color: #cccccc;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   color: var(--white);
+}
+
+.header-style-afbeeldingen {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  color: var(--white);
+  background: var(--magenta);
+  background: linear-gradient(
+    315deg,
+    var(--dark-magenta) 0%,
+    var(--magenta) 100%
+  );
 }
 
 
@@ -338,10 +356,10 @@ nav {
 .header-style-image {
     height: calc(95vh - 60px - 11rem);
   padding-top: 3rem;
-  max-height: calc(800px - 60px - 11rem);
+  max-height: calc(1080px - 60px - 11rem);
   width: auto;
-
 }
+
 
 .header-style-image img {
   width: auto;
@@ -373,7 +391,8 @@ nav {
 }
 
 @media screen and (min-width: 630px) {
-  .header-style {
+  .header-style,
+  .header-style-afbeeldingen {
     margin-top: -1rem;
   }
 
@@ -392,7 +411,8 @@ nav {
 }
 
 @media screen and (min-width: 1000px) {
-  .header-style {
+  .header-style,
+  .header-style-afbeeldingen {
     margin-top: -2.5rem;
   }
 
@@ -492,7 +512,7 @@ nav {
   }
 
   .socialmedias-button .button span {
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-weight: 600;
     margin-left: 10px;
     transition: all 0.3s ease-out;
@@ -533,6 +553,7 @@ main {
 
 .content-richtlinen {
   display: flex;
+  justify-content: space-between;
   gap: 3rem;
 }
 
@@ -575,6 +596,15 @@ main {
   width: 100%;
 }
 
+.title-afbeeldingen{
+  max-width: 800px;
+  padding: 2rem 0;
+}
+
+.afbeelding-content{
+  width: 100%;
+}
+
 .checklist-box {
   display: flex;
   flex-wrap: wrap;
@@ -614,7 +644,7 @@ main {
 
 .ankerpoint {
   list-style: none;
-  font-size: 1.2rem;
+  font-size: 1.125rem;
 }
 
 .ankerpoint a {
@@ -666,81 +696,152 @@ main {
     flex-wrap: nowrap;
   }
 }
+
 /* details summery */
 
-details {
-  margin-bottom: 1rem;
+.details-box-shadow {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 34, 0.336);
   border-radius: 10px;
-  box-shadow: 0px 0px 20px #0022;
+  margin: 2rem 0;
+  overflow: hidden;
+  background-color: lightgrey;
+}
+
+details h3 {
+  font-size: 1.3rem;
+  color: var(--black);
+}
+
+
+details:hover h3 {
+  color: var(--white);
+}
+
+details[open] h3 {
+  color: var(--white);
+}
+
+.content-richtlinen details {
   background-color: var(--white);
 }
 
-details [open] {
-  padding-bottom: 20px;
+.content-richtlinen details[open] {
+  border-radius: 10px;
 }
 
 details > summary {
-  background: linear-gradient(
-    315deg,
-    var(--dark-magenta) 0%,
-    var(--magenta) 100%
-  );
+  background: none;
   color: var(--white);
-  border-radius: 10px;
-  padding: 1rem;
-}
-
-details summary h3 {
-  color: var(--white);
+  padding: 1rem 2rem;
 }
 
 details[open] > summary {
   background-color: var(--magenta);
   color: var(--white);
-  padding: 1rem;
   border-radius: 10px 10px 0 0;
+  padding: 1rem 2rem;
+  box-shadow: 0px 0px 20px rgba(0, 0, 34, 0.336);
+
 }
 
-details summary h3 {
-  font-size: 1.2rem;
+details:hover > summary {
+  background-color: var(--magenta);
 }
 
-details > summary > * {
-  display: inline-block;
+.content-richtlinen details summary i.fa-caret-down {
+  color: var(--magenta);
 }
 
-.checkmark {
-  margin-right: 1rem;
+.content-richtlinen details:hover summary i.fa-caret-down {
+  color: var(--white);
+  
 }
 
-input[type="checkbox"] {
-  width: 40px;
-  height: 40px;
-  float: right;
-  transition: box-shadow 0.3s;
-  box-shadow: 0px 0px 100px #0022;
-  border-radius: 10px;
-  background: var(--white);
+.content-richtlinen details[open] summary i.fa-caret-down {
+  transform: rotate(-180deg);
+  transition-duration: 0.5s;
+  color: var(--white);
+}
+
+.content-richtlinen summary i.fa-caret-down {
+  height: fit-content;
+  transform: rotate(0deg);
+  font-size: 2rem;
+  transition: 0.5s;
+}
+
+.content-richtlinen summary {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
   cursor: pointer;
-  border: 0;
-  appearance: none;
-  /*-webkit-appearance: none;*/
 }
 
-input:checked {
-  box-shadow: inset 0 0 0 20px rgb(53, 253, 53);
+.content-richtlinen details summary label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: auto;
+  background-color: var(--white);
+  border-radius: 10px;
 }
+
+.content-richtlinen details summary label i {
+  position: absolute;
+  color: var(--white);
+  font-size: 1.6rem;
+}
+
+.content-richtlinen details summary input {
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 4px solid var(--magenta);
+  border-radius: 6px;
+  appearance: none;
+  transition: 0.2s;
+}
+
+.content-richtlinen details[open] summary input {
+  border: 4px solid var(--white);
+}
+
+.content-richtlinen details:hover summary input {
+  border: 4px solid var(--white);
+  transition-duration: 1ms;
+}
+
+.content-richtlinen details summary input:checked {
+  box-shadow: inset 0 0 0 20px var(--magenta);
+}
+
 
 /* details content */
 .detail-list {
-  padding: 0.5rem 4rem;
-  padding-top: 2rem;
+  padding: 2rem 4.7rem;
   padding-bottom: 2rem;
+  width: 100%;
+}
+
+.detail-list p{
+margin-top: 1rem;
 }
 
 .img-detail-list {
   width: 100%;
   margin-bottom: 3rem;
+}
+
+.detail-list code{
+  display: inline-block;
+  padding: 0 0.5rem;
+  margin: 0.2rem 0;
+  border: 2px solid #D3D3D3;
+  background: #F6F8F9;
+  border-radius: 5px;
 }
 
 .detail-button {
@@ -749,7 +850,7 @@ input:checked {
   margin: 1rem 1rem 0 0;
   background-color: var(--magenta);
   border: none;
-  font-size: 1rem;
+  font-size: 1.125rem;
   color: var(--white);
   border-radius: 10px;
   cursor: pointer;
@@ -757,8 +858,11 @@ input:checked {
 
 .detail-list li {
   margin: 1rem 0;
-  font-size: 1.2rem;
+  font-size: 1.125rem;
 }
+
+
+
 
 /* footer */
 
@@ -873,7 +977,7 @@ textarea {
   box-sizing: border-box;
   font-family: "fira-sans", sans-serif;
   resize: vertical;
-  font-size: 1.1rem;
+  font-size: 1.125rem;
 }
 .footer-bericht input[type="submit"] {
   background-color: var(--white);
@@ -883,7 +987,7 @@ textarea {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 600;
   text-align: left;
   border: 4px solid var(--white);
@@ -905,7 +1009,7 @@ textarea {
 }
 
 .sub-footer p {
-  padding-bottom: 1rem;
+  padding-bottom: 1.125rem;
 }
 
 .sub-footer a {

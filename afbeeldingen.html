@@ -7,10 +7,12 @@
   <meta name="keywords" content="wcaw" />
   <meta name="description" content="all human accessible website" />
   <meta name="author" content="Sascha Davidson" />
-  <link rel="stylesheet" href="styles/styles-afbeeldingen.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <script src="https://kit.fontawesome.com/b6f0c431c5.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/prism.css">
 
   <title>afbeelding</title>
   <link rel="icon" type="image/png" href="assets/va-favicon.svg" />
@@ -53,7 +55,7 @@
 
   </header>
 
-  <div class="header-style">
+  <div class="header-style-afbeeldingen">
     <section class="vervoerregio-path-box">
       <div class="vervoerregio-path-box-devided">
         <section class="responsive-width"></section>
@@ -112,15 +114,16 @@
         </a>
       </div>
     </section>
-    <section class="header-style-title">
-      <h1>afbeeldingen</h1>
-
+    <section class="header-style-content">
+      <section class="header-style-title">
+        <h1>Afbeeldingen</h1>
+      </section>
     </section>
   </div>
 
   <main>
     <section class="content-richtlinen">
-      <div>
+      <div class="afbeelding-content">
         <section class="title-afbeeldingen">
 
           <p>
@@ -147,43 +150,45 @@
             </summary>
 
             <section class="detail-list">
-              <img class="img-detail-list" src="assets/1.1.1-Niet-tekstuele-content.png" alt="test">
-              <p>Alle niet-tekstuele content die aan de gebruiker wordt gepresenteerd, heeft een tekstalternatief dat
-                een
-                gelijkwaardig doel dient, behalve voor de hierna vermelde situaties.</p>
-              <ul>
-                <li>Bedieningselementen, invoer: Als niet-tekstuele content een bedieningselement is of gebruikersinvoer
-                  accepteert, dan heeft deze een naam die het doel ervan beschrijft. (We verwijzen naar succescriterium
-                  4.1.2 voor aanvullende eisen ten aanzien van bedieningselementen en content die gebruikersinvoer
-                  accepteren.)</li>
-                <li>Op tijd gebaseerde media: Als niet-tekstuele content op tijd gebaseerde media is, dan leveren
-                  tekstalternatieven ten minste een beschrijving van de niet-tekstuele content. (We verwijzen naar
-                  Richtlijn
-                  1.2 voor aanvullende eisen ten aanzien van media.)</li>
-                <li>Test: Als niet-tekstuele content een test of oefening is die, als ze door middel van tekst
-                  gepresenteerd
-                  wordt onjuist zou zijn, dan leveren tekstalternatieven ten minste een beschrijving van de
-                  niet-tekstuele
-                  content.</li>
-                <li>Zintuiglijk: Als niet-tekstuele content primair is bedoeld om een specifieke zintuiglijke ervaring
-                  te
-                  creëren, dan leveren tekstalternatieven ten minste een beschrijving van de niet-tekstuele content.
-                </li>
-                <li>CAPTCHA: Als het doel van niet-tekstuele content is om te bevestigen dat content wordt gebruikt door
-                  een
-                  persoon in plaats van een computer, dan worden tekstalternatieven geleverd die het doel van de
-                  niet-tekstuele content identificeren en beschrijven. En er worden alternatieve vormen van CAPTCHA
-                  aangeboden gebruikmakend van uitvoermodes voor verschillende soorten van zintuiglijke perceptie om
-                  tegemoet te komen aan verschillende functiebeperkingen.</li>
-                <li>Decoratie, opmaak, onzichtbaar: Als niet-tekstuele content puur decoratief is, slechts voor visuele
-                  opmaak wordt gebruikt, of niet aan gebruikers wordt gerepresenteerd, dan wordt het op zo’n manier
-                  geïmplementeerd dat het genegeerd kan worden door hulptechnologie.</li>
-              </ul>
+              <p>Alle afbeeldingen moeten een tekstalternatief hebben. Een tekstalternatief kan op verschillende
+                manieren worden toegevoegd:</p>
+              <h4>Tekstalternatief voor een <code>&lt;img&gt;</code>-element</h4>
+              <p>Bij een <code>&lt;img&gt;</code>-element wordt een tekstalternatief gegeven met behulp van het
+                <code>&lt;alt&gt;</code>-attribuut.
+              </p>
+              <p>In de code ziet dat er zo uit:</p>
+              <script type="text/plain"
+                class="language-html"><img decoding="async" src="hond.jpg" alt="Hond speelt met een bal"></script>
+
+              <h4>Tekstalternatief voor een <code>&lt;svg&gt;</code>-element</h4>
+              <p>Bij een <code>&lt;svg&gt;</code>-element wordt een tekstalternatief gegeven met behulp van het
+                <code>&lt;title&gt;</code>-element in de svg. Gebruik ook aria-attribuut <code>&lt;role="img"&gt;</code>
+                om ervoor te zorgen dat zo veel mogelijk
+                ondersteunende technologieën het <code>&lt;svg&gt;</code>-element herkennen als een afbeelding.
+              </p>
+              <p>In de code ziet dat er zo uit:</p>
+              <script type="text/plain" class="language-html"><svg role="img">
+                  <title>Hond speelt met een bal</title>
+                  ...
+                </svg></script>
+
+              <h4>Tekstalternatief voor afbeeldingen die is geplaatst met CSS</h4>
+              <p>Aan een afbeelding die geplaatst is met CSS kan een tekstalternatief worden gegeven met een
+                <code>&lt;aria-label.&gt;</code>
+              </p>
+              <p>In de code ziet dat er zo uit:</p>
+              <script type="text/plain"
+                class="language-html"><div id=”logo” aria-label=”Hond speelt met een bal”></div></script>
+
+              <h4>Invulling van het Tekstalternatief</h4>
+              <p>De invulling van een tekstalternatief wordt bepaald door de functie die een afbeelding heeft. In veel
+                gevallen draagt een afbeelding informatie over. Beschrijf dan in het tekstalternatief wat er op de
+                afbeelding te zien is. Bij een afbeelding die ook een link is, gaat het juist om het beschrijven waar de
+                link naar toe verwijst. Als een afbeelding geen informatie aan de pagina toevoegt, dan is het beter om
+                het helemaal geen tekstalternatief te geven zodat het kan worden genegeerd door hulptechnologieën.</p>
+
+
               <a href="#"><button class="detail-button">Bekijk een voorbeeld website</button></a>
-              <!--<a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html"><button
-              class="detail-button">Niet-tekstuele content begrijpen </button></a>
-          <a href="https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=231%2C111#non-text-content"><button
-              class="detail-button">Hoe te voldoen aan Niet-tekstuele content </button></a>-->
             </section>
           </details>
 
@@ -197,43 +202,17 @@
             </summary>
 
             <section class="detail-list">
-              <img class="img-detail-list" src="assets/1.1.1-Niet-tekstuele-content.png" alt="test">
-              <p>Alle niet-tekstuele content die aan de gebruiker wordt gepresenteerd, heeft een tekstalternatief dat
-                een
-                gelijkwaardig doel dient, behalve voor de hierna vermelde situaties.</p>
-              <ul>
-                <li>Bedieningselementen, invoer: Als niet-tekstuele content een bedieningselement is of gebruikersinvoer
-                  accepteert, dan heeft deze een naam die het doel ervan beschrijft. (We verwijzen naar succescriterium
-                  4.1.2 voor aanvullende eisen ten aanzien van bedieningselementen en content die gebruikersinvoer
-                  accepteren.)</li>
-                <li>Op tijd gebaseerde media: Als niet-tekstuele content op tijd gebaseerde media is, dan leveren
-                  tekstalternatieven ten minste een beschrijving van de niet-tekstuele content. (We verwijzen naar
-                  Richtlijn
-                  1.2 voor aanvullende eisen ten aanzien van media.)</li>
-                <li>Test: Als niet-tekstuele content een test of oefening is die, als ze door middel van tekst
-                  gepresenteerd
-                  wordt onjuist zou zijn, dan leveren tekstalternatieven ten minste een beschrijving van de
-                  niet-tekstuele
-                  content.</li>
-                <li>Zintuiglijk: Als niet-tekstuele content primair is bedoeld om een specifieke zintuiglijke ervaring
-                  te
-                  creëren, dan leveren tekstalternatieven ten minste een beschrijving van de niet-tekstuele content.
-                </li>
-                <li>CAPTCHA: Als het doel van niet-tekstuele content is om te bevestigen dat content wordt gebruikt door
-                  een
-                  persoon in plaats van een computer, dan worden tekstalternatieven geleverd die het doel van de
-                  niet-tekstuele content identificeren en beschrijven. En er worden alternatieve vormen van CAPTCHA
-                  aangeboden gebruikmakend van uitvoermodes voor verschillende soorten van zintuiglijke perceptie om
-                  tegemoet te komen aan verschillende functiebeperkingen.</li>
-                <li>Decoratie, opmaak, onzichtbaar: Als niet-tekstuele content puur decoratief is, slechts voor visuele
-                  opmaak wordt gebruikt, of niet aan gebruikers wordt gerepresenteerd, dan wordt het op zo’n manier
-                  geïmplementeerd dat het genegeerd kan worden door hulptechnologie.</li>
-              </ul>
-              <a href="#"><button class="detail-button">Bekijk een voorbeeld website</button></a>
-              <!--<a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html"><button
-              class="detail-button">Niet-tekstuele content begrijpen </button></a>
-          <a href="https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=231%2C111#non-text-content"><button
-              class="detail-button">Hoe te voldoen aan Niet-tekstuele content </button></a>-->
+              <p>Afbeeldingen die informatie overbrengen zijn noodzakelijk voor het begrijpen van de tekst. De
+                afbeeldingen voegen extra informatie toe aan de pagina. Deze afbeeldingen moeten een tekstalternatief
+                hebben dat nauwkeurig beschrijft wat er op de afbeelding te zien is. De invulling is afhankelijk van de
+                context en kan per situatie afwijkend zijn voor dezelfde afbeelding.</p>
+              <p>In een CMS kan een tekstalternatief doorgaans worden toegevoegd in de mediatheek.</p>
+              <p>In de code ziet dat er zo uit:</p>
+              <script type="text/plain"
+                class="language-html"><img decoding="async" src="poes.jpg" alt="Witte poes speelt met een rode bal"></script>
+              <p>Het tekstalternatief moet een goede vervanging kunnen zijn voor een afbeelding. Bedenk bij het
+                schrijven van het tekstalternatief altijd wat de bedoeling is van de afbeelding. Houd een
+                tekstalternatief altijd nuttig en beknopt.</p>
             </section>
           </details>
 
@@ -590,6 +569,8 @@
 
 
   <script src="scripts/script.js" charset="utf-8"></script>
+  <script src="scripts/prism.js"></script>
+
 </body>
 
 </html>
