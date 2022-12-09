@@ -8,6 +8,8 @@
   <meta name="description" content="all human accessible website" />
   <meta name="author" content="Sascha Davidson" />
   <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/script.js" defer charset="utf-8"></script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
@@ -28,7 +30,7 @@
       </a>
     </div>
 
-    <section class="burger">
+    <section id="burger" class="burger">
       <section>
         <p>Menu</p>
       </section>
@@ -56,6 +58,52 @@
   </header>
 
   <div class="header-style">
+
+    <section id="mobile-nav" class="mobile-nav">
+      <nav>
+        <ul class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">wat gebeurt er</a></li>
+          <li><a href="#">Wat doen wij?</a></li>
+          <li><a href="#">Wie zijn wij?</a></li>
+          <li><a href="#">Wcag Richtlijnen</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="social-media-mobile">
+        <a href="https://www.facebook.com/vervoerregio" class="button">
+          <div class="icon">
+            <i class="fab fa-facebook"></i>
+          </div>
+          </a>
+
+          <a href="https://www.twitter.com/vervoerregio" class="button">
+            <div class="icon">
+              <i class="fab fa-twitter"></i>
+            </div>
+          </a>
+  
+          <a href="https://www.facebook.com/vervoerregio" class="button">
+            <div class="icon">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </a>
+  
+          <a href="#" class="button">
+            <div class="icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+          </a>
+  
+          <a href="#" class="button">
+            <div class="icon">
+              <i class="fab fa-github"></i>
+            </div>
+          </a>
+      </section>
+    </section>
+
+
     <section class="vervoerregio-path-box">
       <div class="vervoerregio-path-box-devided">
         <section class="responsive-width"></section>
@@ -119,8 +167,9 @@
 
     <section class="header-style-content">
       <section class="header-style-title">
-        <h1>Maak het web <strong>Toegankelijk</strong></h1>
-        <p>Samen met deze toegankelijkheids-tool maakt u eenvouding websites en apps toegankelijker, geleidt door de WCAG principes en richtlijnen.</p>
+        <h1>Maak het web <br><strong>Toegankelijk</strong></h1>
+        <p>Samen met deze toegankelijkheids-tool maakt u eenvouding websites en apps toegankelijker, geleidt door de
+          WCAG principes en richtlijnen.</p>
 
       </section>
 
@@ -133,6 +182,7 @@
       <div class="bottom-bar-verloop"></div>
       <div class="bottom-bar-box"></div>
     </section>
+
 
 
   </div>
@@ -212,7 +262,6 @@
     </section>
   </footer>
 
-  <script src="scripts/script.js" charset="utf-8"></script>
 </body>
 
 </html>
