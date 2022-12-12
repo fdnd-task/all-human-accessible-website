@@ -3,24 +3,41 @@
 /* HTML */
 
 :root {
-  --primary : #e30059;
-  --secondary: #b9005f;
+  --c-primary: #e30059;
+  --c-secondary: #b9005f;
 
-  --vervoerregio-yello: #ffd05f;
-  --vervoerregio-light-blue: #45becd;
-  --vervoerregio-green: #25ae93;
-  --vervoerregio-blue: #606eb3;
+  --c-vervoerregio-yello: #ffd05f;
+  --c-vervoerregio-light-blue: #45becd;
+  --c-vervoerregio-green: #25ae93;
+  --c-vervoerregio-blue: #606eb3;
 
-  --background-light: #fff;
-  --background-dark: #000;
+  --c-background-light: #fff;
+  --c-background-dark: #000;
 
-  --color-light: #fff;
-  --color-dark: #000;
+  --c-color-light: #fff;
+  --c-color-dark: #000;
+
+  --c-background-light-solid: #fff;
+  --c-background-dark-solid: #000;
+
+  --c-color-light-solid: #fff;
+  --c-color-dark-solid: #000;
 
   --smal-gap: 1rem;
   --medium-gap: 2.5rem;
   --large-gap: 4rem;
 
+  --c-box-shadow-dark: 0px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="dark"] {
+  --c-background-light: #000;
+  --c-background-dark: #fff;
+
+  --c-color-light: #000;
+  --c-color-dark: #fff;
+
+  --c-box-shadow-dark: 0px 5px 15px rgba(225, 225, 255, 0.35);
 }
 
 * {
@@ -34,46 +51,40 @@ body {
   max-width: 1920px;
   margin: 0 auto;
   line-height: 1.4;
+  background-color: var(--c-color-light);
 }
 
 h1 {
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  font-size: clamp(2rem, 6vw, 5rem);
+
   font-weight: 400;
   display: inline-block;
   padding: 1rem 0;
 }
 
 strong {
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
+  font-size: clamp(2.5rem, 8vw, 7rem);
   font-weight: 700;
 }
-
-/* h1 {
-  font-size : clamp(1.6rem, 10vw, 4rem);
-    font-weight: 400;
-  display: inline-block;
-  padding: 1rem 0;
-}
-
-strong {
-  font-size : clamp(2rem, 12vw, 7rem);
-  font-weight: 700;
-} */
-
 h2 {
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  font-size: clamp(2rem, 7vw, 3.5rem);
   font-weight: 400;
 }
 
 h3 {
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
+  font-size: clamp(1.3rem, 3vw, 2.5rem);
   font-weight: 500;
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
 
 h4 {
-  font-size: 1.8rem;
+  /* font-size: 1.8rem; */
+  font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 600;
 }
 
@@ -81,7 +92,7 @@ p {
   font-size: 1.125rem;
 }
 
-@media screen and (min-width: 500px) {
+/* @media screen and (min-width: 500px) {
   h1 {
     font-size: 3rem;
     font-weight: 400;
@@ -133,7 +144,7 @@ p {
     font-weight: 600;
     padding: 2rem 0 0 0;
   }
-}
+} */
 
 /* Header */
 
@@ -188,14 +199,14 @@ header {
   .burger {
     display: flex;
     align-items: center;
-    gap:var(--smal-gap);
+    gap: var(--smal-gap);
     z-index: 2;
   }
 
   .burger div {
     width: 25px;
     height: 3px;
-    background-color: var(--background-dark);
+    background-color: var(--c-background-dark);
     margin: 5px;
     border-radius: 50px;
     transition: all 0.3s ease;
@@ -225,7 +236,7 @@ header {
   }
 
   .mobile-nav ul li a {
-    color: var(--color-light);
+    color: var(--c-color-light-solid);
     text-decoration: none;
     font-size: 1.125rem;
     display: block;
@@ -236,7 +247,7 @@ header {
 
   .mobile-nav ul li a:hover,
   .mobile-nav ul li a:focus {
-    color: var(--primary );
+    color: var(--c-primary);
     transform: scale(1.2);
     font-weight: 500;
   }
@@ -288,7 +299,6 @@ header nav {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    background-color: var(--background-light);
   }
 
   header nav .main-nav li {
@@ -298,7 +308,7 @@ header nav {
   }
 
   header nav .main-nav li a {
-    color: var(--color-dark);
+    color: var(--c-color-dark);
     text-decoration: none;
     font-size: 1.125rem;
     display: inline-block;
@@ -309,7 +319,7 @@ header nav {
 
   header nav .main-nav li a:hover,
   header nav .main-nav li a:focus {
-    color: var(--primary );
+    color: var(--c-primary);
     transform: scale(1.2);
     font-weight: 500;
   }
@@ -347,7 +357,7 @@ header nav {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color: var(--color-light);
+  color: var(--c-color-light-solid);
   overflow: hidden;
 }
 
@@ -356,12 +366,12 @@ header nav {
   height: 100%;
   position: relative;
   z-index: 1;
-  color: var(--color-light);
-  background: var(--primary );
+  color: var(--c-color-light-solid);
+  background: var(--c-primary);
   background: linear-gradient(
     315deg,
-    var(--secondary) 0%,
-    var(--primary ) 100%
+    var(--c-secondary) 0%,
+    var(--c-primary) 100%
   );
 }
 
@@ -388,13 +398,13 @@ header nav {
 .responsive-width {
   width: 5%;
   height: 100%;
-  background-color: var(--background-light);
+  background-color: var(--c-background-light);
 }
 
 .logo-width {
   width: 10rem;
   height: 100%;
-  background-color: var(--background-light);
+  background-color: var(--c-background-light);
 }
 
 .header-style-content {
@@ -406,6 +416,8 @@ header nav {
   width: 100%;
   max-width: 800px;
   height: calc(100vh - 70px - 11rem);
+  max-height: calc(1080px - 60px - 11rem);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -462,7 +474,6 @@ header nav {
 
   .header-style .header-style-title {
     height: calc(100vh - 138px - 60px - 10rem);
-    max-height: calc(1080px - 60px - 11rem);
   }
 
   .bottom-bar-box {
@@ -492,7 +503,7 @@ header nav {
     height: 95vh;
   }
 
-    .header-style .header-style-title {
+  .header-style .header-style-title {
     height: auto;
   }
 
@@ -539,16 +550,17 @@ header nav {
     height: 40px;
     width: 40px;
     overflow: hidden;
-    background: var(--background-light);
+    background: var(--c-background-light-solid);
     border-radius: 50px;
     cursor: pointer;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--c-box-shadow-dark);
     transition: all 0.3s ease-out;
   }
 
   .socialmedias-button .button:hover,
   .socialmedias-button .button:focus {
     width: 160px;
+    background-color: var(--c-background-light-solid);
   }
 
   .socialmedias-button .button .icon {
@@ -595,7 +607,7 @@ header nav {
 
   .socialmedias-button .button:hover .icon i,
   .socialmedias-button .button:focus .icon i {
-    color: var(--color-light);
+    color: var(--c-background-light-solid);
   }
 
   .socialmedias-button .button span {
@@ -627,7 +639,7 @@ header nav {
 
   .socialmedias-button .button {
     text-decoration: none;
-    color: var(--primary );
+    color: var(--c-primary);
   }
 }
 
@@ -662,10 +674,10 @@ main {
 
 .informatie-box {
   width: 100%;
-  color: var(--color-dark);
+  color: var(--c-color-dark);
   text-decoration: none;
   padding: 1rem 2rem;
-  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--c-box-shadow-dark);
   border-radius: 15px;
   cursor: pointer;
 }
@@ -673,10 +685,10 @@ main {
 .informatie-box:hover {
   background: linear-gradient(
     315deg,
-    var(--secondary) 0%,
-    var(--primary ) 100%
+    var(--c-secondary) 0%,
+    var(--c-primary) 100%
   );
-  color: var(--color-light);
+  color: var(--c-color-light);
 }
 
 .informatie-box img {
@@ -697,11 +709,11 @@ main {
   flex-wrap: wrap;
   align-items: center;
   gap: var(--medium-gap);
-  color: var(--color-dark);
+  color: var(--c-color-dark);
   text-decoration: none;
 
   padding: 1rem 2rem;
-  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--c-box-shadow-dark);
   border-radius: 15px;
   cursor: pointer;
 }
@@ -709,10 +721,10 @@ main {
 .checklist-box:hover {
   background: linear-gradient(
     315deg,
-    var(--secondary) 0%,
-    var(--primary ) 100%
+    var(--c-secondary) 0%,
+    var(--c-primary) 100%
   );
-  color: var(--color-light);
+  color: var(--c-color-light);
 }
 
 .checklist-box img {
@@ -736,7 +748,7 @@ main {
 
 .ankerpoint a {
   font-weight: 500;
-  color: var(--color-dark);
+  color: var(--c-color-dark);
   text-decoration: none;
 }
 
@@ -753,7 +765,7 @@ main {
 }
 
 .ankerpoint ul a:hover {
-  color: var(--primary );
+  color: var(--c-primary);
 }
 
 @media screen and (min-width: 450px) {
@@ -790,7 +802,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 34, 0.336);
+  box-shadow: var(--c-box-shadow-dark);
   border-radius: 10px;
   margin: 2rem 0;
   overflow: hidden;
@@ -799,19 +811,33 @@ main {
 
 details h3 {
   font-size: 1.3rem;
-  color: var(--color-dark);
+  color: var(--c-color-dark);
 }
 
 details:hover h3 {
-  color: var(--color-light);
+  color: var(--c-color-light-solid);
 }
 
 details[open] h3 {
-  color: var(--color-light);
+  color: var(--c-color-light-solid);
 }
 
+details h4 {
+  font-size: 1.3rem;
+  color: var(--c-color-dark);
+}
+
+details:hover h4 {
+  color: var(--c-color-dark);
+}
+
+details[open] h4 {
+  color: var(--c-color-dark);
+}
+
+
 .content-richtlinen details {
-  background-color: var(--color-light);
+  background-color: var(--c-color-light);
 }
 
 .content-richtlinen details[open] {
@@ -820,34 +846,34 @@ details[open] h3 {
 
 details > summary {
   background: none;
-  color: var(--color-light);
+  color: var(--c-color-light);
   padding: 1rem 2rem;
 }
 
 details[open] > summary {
-  background-color: var(--primary );
-  color: var(--color-light);
+  background-color: var(--c-primary);
+  color: var(--c-color-light-solid);
   border-radius: 10px 10px 0 0;
   padding: 1rem 2rem;
-  box-shadow: 0px 0px 20px rgba(0, 0, 34, 0.336);
+  box-shadow: var(--c-box-shadow-dark);
 }
 
 details:hover > summary {
-  background-color: var(--primary );
+  background-color: var(--c-primary);
 }
 
 .content-richtlinen details summary i.fa-caret-down {
-  color: var(--primary );
+  color: var(--c-primary);
 }
 
 .content-richtlinen details:hover summary i.fa-caret-down {
-  color: var(--color-light);
+  color: var(--c-color-light-solid);
 }
 
 .content-richtlinen details[open] summary i.fa-caret-down {
   transform: rotate(-180deg);
   transition-duration: 0.5s;
-  color: var(--color-light);
+  color: var(--c-color-light-solid);
 }
 
 .content-richtlinen summary i.fa-caret-down {
@@ -870,36 +896,36 @@ details:hover > summary {
   justify-content: center;
   cursor: pointer;
   margin-left: auto;
-  background-color: var(--background-light);
+  background-color: var(--c-background-light);
   border-radius: 10px;
 }
 
 .content-richtlinen details summary label i {
   position: absolute;
-  color: var(--color-light);
+  color: var(--c-color-light);
   font-size: 1.6rem;
 }
 
 .content-richtlinen details summary input {
   width: 2.2rem;
   height: 2.2rem;
-  border: 4px solid var(--primary );
+  border: 4px solid var(--c-primary);
   border-radius: 6px;
   appearance: none;
   transition: 0.2s;
 }
 
 .content-richtlinen details[open] summary input {
-  border: 4px solid var(--color-light);
+  border: 4px solid var(--c-color-light-solid);
 }
 
 .content-richtlinen details:hover summary input {
-  border: 4px solid var(--color-light);
+  border: 4px solid var(--c-color-light-solid);
   transition-duration: 1ms;
 }
 
 .content-richtlinen details summary input:checked {
-  box-shadow: inset 0 0 0 20px var(--primary );
+  box-shadow: inset 0 0 0 20px var(--c-primary);
 }
 
 /* details content */
@@ -931,10 +957,10 @@ details:hover > summary {
   width: auto;
   padding: 1rem;
   margin: 1rem 1rem 0 0;
-  background-color: var(--primary );
+  background-color: var(--c-primary);
   border: none;
   font-size: 1.125rem;
-  color: var(--color-light);
+  color: var(--c-color-light);
   border-radius: 10px;
   cursor: pointer;
 }
@@ -947,14 +973,14 @@ details:hover > summary {
 /* footer */
 
 footer {
-  background: var(--primary );
+  background: var(--c-primary);
   background: linear-gradient(
     315deg,
-    var(--secondary) 0%,
-    var(--primary ) 100%
+    var(--c-secondary) 0%,
+    var(--c-primary) 100%
   );
   position: relative;
-  color: var(--color-light);
+  color: var(--c-color-light-solid);
 }
 
 .footer-content {
@@ -990,19 +1016,19 @@ footer {
 .responsive-width-footer {
   width: 10%;
   height: 3rem;
-  background-color: var(--background-light);
+  background-color: var(--c-background-light);
 }
 
 .width-footer {
   width: 40%;
   height: 3rem;
-  background-color: var(--background-light);
+  background-color: var(--c-background-light);
 }
 
 .vervoerregio-path-footer {
   width: 6rem;
   height: 3rem;
-  background-color: var(--background-light);
+  background-color: var(--c-background-light);
   /* clip-path: url(./the-client-case/assets/svg-path.svg); */
   clip-path: path("M 96 0 L 0 0 C 48 0 48 48 96 48");
   /* clip-path: ellipse(20px 20px at 20% 20%); */
@@ -1060,8 +1086,8 @@ textarea {
   font-size: 1.125rem;
 }
 .footer-bericht input[type="submit"] {
-  background-color: var(--background-light);
-  color: var(--primary );
+  background-color: var(--c-background-light-solid);
+  color: var(--c-primary);
   padding: 8px 1rem;
   margin: 8px 0;
   border: none;
@@ -1070,13 +1096,13 @@ textarea {
   font-size: 1.125rem;
   font-weight: 600;
   text-align: left;
-  border: 4px solid var(--color-light);
+  border: 4px solid var(--c-color-light-solid);
   transition: 0.5s;
 }
 
 .footer-bericht input[type="submit"]:hover {
-  border: 4px solid var(--color-light);
-  color: var(--color-light);
+  border: 4px solid var(--c-color-light-solid);
+  color: var(--c-color-light-solid);
   background-color: transparent;
 }
 
@@ -1095,7 +1121,7 @@ textarea {
 .sub-footer a {
   padding: 1rem;
   display: block;
-  color: var(--color-light);
+  color: var(--c-color-light-solid);
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease-in-out;

@@ -34,3 +34,12 @@ burger.addEventListener('click', () => {
   console.log(nav.classList)
   nav.classList.toggle('open-menu')
 })
+
+
+let modeSwitch = document.getElementById("mode");
+
+modeSwitch.addEventListener('click', function () {
+    modeSwitch.checked ? 
+    document.documentElement.setAttribute("data-theme", "dark") : 
+    document.documentElement.setAttribute("data-theme", "");
+});
