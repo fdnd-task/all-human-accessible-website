@@ -3,16 +3,24 @@
 /* HTML */
 
 :root {
-  --yello: #ffd05f;
-  --light-blue: #45becd;
-  --green: #25ae93;
-  --blue: #606eb3;
+  --primary : #e30059;
+  --secondary: #b9005f;
 
-  --magenta: #e30059;
-  --dark-magenta: #b9005f;
+  --vervoerregio-yello: #ffd05f;
+  --vervoerregio-light-blue: #45becd;
+  --vervoerregio-green: #25ae93;
+  --vervoerregio-blue: #606eb3;
 
-  --white: #fff;
-  --black: #000;
+  --background-light: #fff;
+  --background-dark: #000;
+
+  --color-light: #fff;
+  --color-dark: #000;
+
+  --smal-gap: 1rem;
+  --medium-gap: 2.5rem;
+  --large-gap: 4rem;
+
 }
 
 * {
@@ -39,6 +47,18 @@ strong {
   font-size: 2.5rem;
   font-weight: 700;
 }
+
+/* h1 {
+  font-size : clamp(1.6rem, 10vw, 4rem);
+    font-weight: 400;
+  display: inline-block;
+  padding: 1rem 0;
+}
+
+strong {
+  font-size : clamp(2rem, 12vw, 7rem);
+  font-weight: 700;
+} */
 
 h2 {
   font-size: 2rem;
@@ -168,14 +188,14 @@ header {
   .burger {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap:var(--smal-gap);
     z-index: 2;
   }
 
   .burger div {
     width: 25px;
     height: 3px;
-    background-color: var(--black);
+    background-color: var(--background-dark);
     margin: 5px;
     border-radius: 50px;
     transition: all 0.3s ease;
@@ -205,7 +225,7 @@ header {
   }
 
   .mobile-nav ul li a {
-    color: var(--white);
+    color: var(--color-light);
     text-decoration: none;
     font-size: 1.125rem;
     display: block;
@@ -216,7 +236,7 @@ header {
 
   .mobile-nav ul li a:hover,
   .mobile-nav ul li a:focus {
-    color: var(--magenta);
+    color: var(--primary );
     transform: scale(1.2);
     font-weight: 500;
   }
@@ -268,7 +288,7 @@ header nav {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    background-color: var(--white);
+    background-color: var(--background-light);
   }
 
   header nav .main-nav li {
@@ -278,7 +298,7 @@ header nav {
   }
 
   header nav .main-nav li a {
-    color: var(--black);
+    color: var(--color-dark);
     text-decoration: none;
     font-size: 1.125rem;
     display: inline-block;
@@ -289,7 +309,7 @@ header nav {
 
   header nav .main-nav li a:hover,
   header nav .main-nav li a:focus {
-    color: var(--magenta);
+    color: var(--primary );
     transform: scale(1.2);
     font-weight: 500;
   }
@@ -308,7 +328,7 @@ header nav {
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    gap: 1rem;
+    gap: var(--smal-gap);
     margin: 0;
   }
 }
@@ -327,7 +347,7 @@ header nav {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color: var(--white);
+  color: var(--color-light);
   overflow: hidden;
 }
 
@@ -336,12 +356,12 @@ header nav {
   height: 100%;
   position: relative;
   z-index: 1;
-  color: var(--white);
-  background: var(--magenta);
+  color: var(--color-light);
+  background: var(--primary );
   background: linear-gradient(
     315deg,
-    var(--dark-magenta) 0%,
-    var(--magenta) 100%
+    var(--secondary) 0%,
+    var(--primary ) 100%
   );
 }
 
@@ -368,13 +388,13 @@ header nav {
 .responsive-width {
   width: 5%;
   height: 100%;
-  background-color: var(--white);
+  background-color: var(--background-light);
 }
 
 .logo-width {
-  width: 7rem;
+  width: 10rem;
   height: 100%;
-  background-color: var(--white);
+  background-color: var(--background-light);
 }
 
 .header-style-content {
@@ -442,6 +462,7 @@ header nav {
 
   .header-style .header-style-title {
     height: calc(100vh - 138px - 60px - 10rem);
+    max-height: calc(1080px - 60px - 11rem);
   }
 
   .bottom-bar-box {
@@ -471,6 +492,10 @@ header nav {
     height: 95vh;
   }
 
+    .header-style .header-style-title {
+    height: auto;
+  }
+
   .responsive-width {
     width: 12%;
   }
@@ -481,9 +506,8 @@ header nav {
 
   .header-style-content {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    gap: 4rem;
+    gap: var(--large-gap);
   }
 
   .header-style-image {
@@ -515,7 +539,7 @@ header nav {
     height: 40px;
     width: 40px;
     overflow: hidden;
-    background: var(--white);
+    background: var(--background-light);
     border-radius: 50px;
     cursor: pointer;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
@@ -571,7 +595,7 @@ header nav {
 
   .socialmedias-button .button:hover .icon i,
   .socialmedias-button .button:focus .icon i {
-    color: var(--white);
+    color: var(--color-light);
   }
 
   .socialmedias-button .button span {
@@ -603,7 +627,7 @@ header nav {
 
   .socialmedias-button .button {
     text-decoration: none;
-    color: var(--magenta);
+    color: var(--primary );
   }
 }
 
@@ -617,7 +641,7 @@ main {
 .content-richtlinen {
   display: flex;
   justify-content: space-between;
-  gap: 3rem;
+  gap: var(--large-gap);
 }
 
 .progresion {
@@ -632,13 +656,13 @@ main {
 .informatie {
   display: flex;
   flex-wrap: wrap;
-  gap: 2.5rem;
+  gap: var(--medium-gap);
   padding-top: 2rem;
 }
 
 .informatie-box {
   width: 100%;
-  color: var(--black);
+  color: var(--color-dark);
   text-decoration: none;
   padding: 1rem 2rem;
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
@@ -649,10 +673,10 @@ main {
 .informatie-box:hover {
   background: linear-gradient(
     315deg,
-    var(--dark-magenta) 0%,
-    var(--magenta) 100%
+    var(--secondary) 0%,
+    var(--primary ) 100%
   );
-  color: var(--white);
+  color: var(--color-light);
 }
 
 .informatie-box img {
@@ -672,8 +696,8 @@ main {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 2.5rem;
-  color: var(--black);
+  gap: var(--medium-gap);
+  color: var(--color-dark);
   text-decoration: none;
 
   padding: 1rem 2rem;
@@ -685,10 +709,10 @@ main {
 .checklist-box:hover {
   background: linear-gradient(
     315deg,
-    var(--dark-magenta) 0%,
-    var(--magenta) 100%
+    var(--secondary) 0%,
+    var(--primary ) 100%
   );
-  color: var(--white);
+  color: var(--color-light);
 }
 
 .checklist-box img {
@@ -712,7 +736,7 @@ main {
 
 .ankerpoint a {
   font-weight: 500;
-  color: var(--black);
+  color: var(--color-dark);
   text-decoration: none;
 }
 
@@ -729,7 +753,7 @@ main {
 }
 
 .ankerpoint ul a:hover {
-  color: var(--magenta);
+  color: var(--primary );
 }
 
 @media screen and (min-width: 450px) {
@@ -775,19 +799,19 @@ main {
 
 details h3 {
   font-size: 1.3rem;
-  color: var(--black);
+  color: var(--color-dark);
 }
 
 details:hover h3 {
-  color: var(--white);
+  color: var(--color-light);
 }
 
 details[open] h3 {
-  color: var(--white);
+  color: var(--color-light);
 }
 
 .content-richtlinen details {
-  background-color: var(--white);
+  background-color: var(--color-light);
 }
 
 .content-richtlinen details[open] {
@@ -796,34 +820,34 @@ details[open] h3 {
 
 details > summary {
   background: none;
-  color: var(--white);
+  color: var(--color-light);
   padding: 1rem 2rem;
 }
 
 details[open] > summary {
-  background-color: var(--magenta);
-  color: var(--white);
+  background-color: var(--primary );
+  color: var(--color-light);
   border-radius: 10px 10px 0 0;
   padding: 1rem 2rem;
   box-shadow: 0px 0px 20px rgba(0, 0, 34, 0.336);
 }
 
 details:hover > summary {
-  background-color: var(--magenta);
+  background-color: var(--primary );
 }
 
 .content-richtlinen details summary i.fa-caret-down {
-  color: var(--magenta);
+  color: var(--primary );
 }
 
 .content-richtlinen details:hover summary i.fa-caret-down {
-  color: var(--white);
+  color: var(--color-light);
 }
 
 .content-richtlinen details[open] summary i.fa-caret-down {
   transform: rotate(-180deg);
   transition-duration: 0.5s;
-  color: var(--white);
+  color: var(--color-light);
 }
 
 .content-richtlinen summary i.fa-caret-down {
@@ -835,7 +859,7 @@ details:hover > summary {
 
 .content-richtlinen summary {
   display: flex;
-  gap: 1.5rem;
+  gap: var(--medium-gap);
   align-items: center;
   cursor: pointer;
 }
@@ -846,36 +870,36 @@ details:hover > summary {
   justify-content: center;
   cursor: pointer;
   margin-left: auto;
-  background-color: var(--white);
+  background-color: var(--background-light);
   border-radius: 10px;
 }
 
 .content-richtlinen details summary label i {
   position: absolute;
-  color: var(--white);
+  color: var(--color-light);
   font-size: 1.6rem;
 }
 
 .content-richtlinen details summary input {
   width: 2.2rem;
   height: 2.2rem;
-  border: 4px solid var(--magenta);
+  border: 4px solid var(--primary );
   border-radius: 6px;
   appearance: none;
   transition: 0.2s;
 }
 
 .content-richtlinen details[open] summary input {
-  border: 4px solid var(--white);
+  border: 4px solid var(--color-light);
 }
 
 .content-richtlinen details:hover summary input {
-  border: 4px solid var(--white);
+  border: 4px solid var(--color-light);
   transition-duration: 1ms;
 }
 
 .content-richtlinen details summary input:checked {
-  box-shadow: inset 0 0 0 20px var(--magenta);
+  box-shadow: inset 0 0 0 20px var(--primary );
 }
 
 /* details content */
@@ -907,10 +931,10 @@ details:hover > summary {
   width: auto;
   padding: 1rem;
   margin: 1rem 1rem 0 0;
-  background-color: var(--magenta);
+  background-color: var(--primary );
   border: none;
   font-size: 1.125rem;
-  color: var(--white);
+  color: var(--color-light);
   border-radius: 10px;
   cursor: pointer;
 }
@@ -923,14 +947,14 @@ details:hover > summary {
 /* footer */
 
 footer {
-  background: var(--magenta);
+  background: var(--primary );
   background: linear-gradient(
     315deg,
-    var(--dark-magenta) 0%,
-    var(--magenta) 100%
+    var(--secondary) 0%,
+    var(--primary ) 100%
   );
   position: relative;
-  color: var(--white);
+  color: var(--color-light);
 }
 
 .footer-content {
@@ -939,7 +963,7 @@ footer {
   padding-top: 6rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 2.5rem;
+  gap: var(--medium-gap);
   padding-bottom: 2rem;
 }
 
@@ -966,19 +990,19 @@ footer {
 .responsive-width-footer {
   width: 10%;
   height: 3rem;
-  background-color: var(--white);
+  background-color: var(--background-light);
 }
 
 .width-footer {
   width: 40%;
   height: 3rem;
-  background-color: var(--white);
+  background-color: var(--background-light);
 }
 
 .vervoerregio-path-footer {
   width: 6rem;
   height: 3rem;
-  background-color: var(--white);
+  background-color: var(--background-light);
   /* clip-path: url(./the-client-case/assets/svg-path.svg); */
   clip-path: path("M 96 0 L 0 0 C 48 0 48 48 96 48");
   /* clip-path: ellipse(20px 20px at 20% 20%); */
@@ -1036,8 +1060,8 @@ textarea {
   font-size: 1.125rem;
 }
 .footer-bericht input[type="submit"] {
-  background-color: var(--white);
-  color: var(--magenta);
+  background-color: var(--background-light);
+  color: var(--primary );
   padding: 8px 1rem;
   margin: 8px 0;
   border: none;
@@ -1046,13 +1070,13 @@ textarea {
   font-size: 1.125rem;
   font-weight: 600;
   text-align: left;
-  border: 4px solid var(--white);
+  border: 4px solid var(--color-light);
   transition: 0.5s;
 }
 
 .footer-bericht input[type="submit"]:hover {
-  border: 4px solid var(--white);
-  color: var(--white);
+  border: 4px solid var(--color-light);
+  color: var(--color-light);
   background-color: transparent;
 }
 
@@ -1071,7 +1095,7 @@ textarea {
 .sub-footer a {
   padding: 1rem;
   display: block;
-  color: var(--white);
+  color: var(--color-light);
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -1126,7 +1150,7 @@ textarea {
 @media screen and (min-width: 800px) {
   .footer-naam-form {
     display: flex;
-    gap: 1rem;
+    gap: var(--smal-gap);
   }
 }
 
