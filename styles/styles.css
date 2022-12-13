@@ -38,7 +38,6 @@
   --b-radius-large: 15px;
   --b-radius-rounded: 50px;
 
-
   --c-box-shadow-dark: 0px 5px 15px rgba(0, 0, 0, 0.35);
 }
 
@@ -82,12 +81,18 @@
   box-sizing: border-box;
 }
 
+body, html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "fira-sans", sans-serif;
   max-width: 1920px;
   margin: 0 auto;
   line-height: 1.4;
   background-color: var(--c-color-light);
+
+  position: relative;
 }
 
 h1 {
@@ -189,6 +194,9 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 5%;
+  flex-wrap: wrap;
+  height: 60px;
+  overflow-y: hidden;
 }
 
 .site-identity {
@@ -205,6 +213,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    flex-wrap: nowrap;
+    height: auto;
   }
   .site-identity img {
     width: 15rem;
@@ -246,25 +256,6 @@ header {
     margin: 5px;
     border-radius: var(--b-radius-rounded);
     transition: all 0.3s ease;
-  }
-
-  .mobile-nav {
-    height: calc(100vh - 70px);
-    width: 80vw;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    flex-direction: column;
-    padding: 4rem 2rem 0 2rem;
-    margin: 0;
-    z-index: 4;
-    right: 0;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
-  }
-
-  .open-menu {
-    transform: translateX(0);
   }
 
   .mobile-nav ul li {
@@ -320,15 +311,85 @@ header {
 
 /* nev bar */
 
-header nav {
-  display: none;
+.mobile-nav {
+  height: calc(100vh - 70px);
+  width: 100vw;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem 0 2rem;
+  margin: 0;
+  z-index: 4;
+  right: 0;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in;
 }
 
+header nav {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  height: calc(100vh - 5rem);
+  max-height: calc(1080px - 5rem);
+  width: 80vw;
+  padding: 4rem 2rem;
+  z-index: 2;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+header .main-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header nav .main-nav li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header nav .main-nav li a {
+  color: var(--c-color-dark);
+  text-decoration: none;
+  font-size: 1.125rem;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  padding: 0.2rem 6px;
+  margin: 0.7rem 0;
+  width: 100%;
+  color: var(--c-color-light-solid);
+}
+
+@media screen and (min-width: 1100px) {
+  header .main-nav {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: var(--smal-gap);
+    margin: 0;
+  }
+}
 @media screen and (min-width: 640px) {
   header nav {
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    transform: none;
+
+    background: none;
+    position: relative;
+    height: auto;
   }
 
   header .main-nav {
@@ -349,8 +410,9 @@ header nav {
     font-size: 1.125rem;
     display: inline-block;
     transition: all 0.3s ease-in-out;
-    padding: 0.3rem 6px;
+    padding: 0.2rem 6px;
     margin: 0.7rem 0;
+    width: auto;
   }
 
   header nav .main-nav li a:hover,
@@ -383,7 +445,7 @@ header nav {
 
 .header-style {
   width: 100%;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 60px);
   position: relative;
   z-index: 1;
   max-height: 1080px;
@@ -414,11 +476,11 @@ header nav {
 /* volgende drie zijn de curve van huistyle*/
 .vervoerregio-path-box {
   width: 100%;
-  height: 30px;
+  height: calc(100vh - 60px);
+  max-height: 1080px;
   display: flex;
   align-items: flex-end;
   position: absolute;
-  position: relative;
   top: 0;
   z-index: 5;
 }
@@ -433,18 +495,19 @@ header nav {
 
 .responsive-width {
   width: 5%;
-  height: 100%;
+  height: 30px;
   background-color: var(--c-background-light);
 }
 
 .logo-width {
   width: 10rem;
-  height: 100%;
+  height: 30px;
   background-color: var(--c-background-light);
 }
 
 .vervoerregio-path-box svg {
   fill: var(--c-background-light);
+  height: 30px;
 }
 
 .header-style-content {
@@ -503,6 +566,31 @@ header nav {
 }
 
 @media screen and (min-width: 640px) {
+  .vervoerregio-path-box {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    position: relative;
+    top: 0;
+    z-index: 5;
+  }
+
+  .vervoerregio-path-box-devided {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: inherit;
+    height: 100%;
+  }
+
+  .vervoerregio-path-box svg,
+  .responsive-width,
+  .logo-width {
+    height: 100%;
+  }
+
   .header-style,
   .header-style-afbeeldingen {
     margin-top: -1rem;
@@ -573,15 +661,79 @@ header nav {
 /* social media */
 
 .socialmedias-button {
+  display: flex;
+  z-index: 8;
+  position: absolute;
+  width: 80vw;
+  right: 0;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in;
+}
+
+.open-menu {
+  transform: translateX(0);
+}
+
+.socialmedias-button span {
   display: none;
 }
+
+.button {
+  display: inline-block;
+  margin: 0;
+  height: 5rem;
+  width: 100%;
+  overflow: hidden;
+  background: var(--c-background-light-solid);
+  cursor: pointer;
+  box-shadow: var(--c-box-shadow-dark);
+  transition: all 0.3s ease-out;
+  z-index: 10;
+  text-decoration: none;
+
+}
+
+.socialmedias-button .button .icon {
+  display: inline-flex;
+  height: 5rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-out;
+  color: white;
+  font-size: 40px;
+}
+
+.socialmedias-button .button:nth-child(1) {
+  background: #4267b2;
+}
+
+.socialmedias-button .button:nth-child(2){
+  background: #1da1f2;
+}
+
+.socialmedias-button .button:nth-child(3) {
+  background: #e1306c;
+}
+
+.socialmedias-button .button:nth-child(4) {
+  background: #0e76a8;
+}
+
+.socialmedias-button .button:nth-child(5) {
+  background: #333;
+}
+
+
 
 @media screen and (min-width: 640px) {
   .socialmedias-button {
     display: flex;
-    z-index: 2;
+    z-index: 10;
     position: absolute;
+    width: auto;
     right: 5%;
+    transform: none;
   }
 
   .button {
@@ -595,6 +747,15 @@ header nav {
     cursor: pointer;
     box-shadow: var(--c-box-shadow-dark);
     transition: all 0.3s ease-out;
+    background-color: var(--c-background-light-solid);
+  }
+
+  .socialmedias-button .button:nth-child(1),
+  .socialmedias-button .button:nth-child(2),
+  .socialmedias-button .button:nth-child(3),
+  .socialmedias-button .button:nth-child(4),
+  .socialmedias-button .button:nth-child(5) {
+    background: var(--c-primary);
   }
 
   .socialmedias-button .button:hover,
@@ -612,6 +773,8 @@ header nav {
     box-sizing: border-box;
     line-height: 40px;
     transition: all 0.3s ease-out;
+    font-size: 20px;
+
   }
 
   .socialmedias-button .button:nth-child(1):hover .icon,
@@ -655,6 +818,7 @@ header nav {
     font-weight: 600;
     margin-left: 10px;
     transition: all 0.3s ease-out;
+    display: inline-block;
   }
 
   .socialmedias-button .button:nth-child(1) span {

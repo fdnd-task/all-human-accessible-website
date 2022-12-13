@@ -28,13 +28,13 @@
 // });//
 
 let burger = document.querySelector("#burger");
-let nav = document.querySelector("#mobile-nav");
-
-
+let nav = document.querySelector("nav");
+let socialmedia = document.querySelector("#socialmedia")
 
 burger.addEventListener('click', () => {
   console.log(nav.classList)
   nav.classList.toggle('open-menu')
+  socialmedia.classList.toggle('open-menu')
 })
 
 
