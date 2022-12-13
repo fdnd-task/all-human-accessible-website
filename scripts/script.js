@@ -30,6 +30,8 @@
 let burger = document.querySelector("#burger");
 let nav = document.querySelector("#mobile-nav");
 
+
+
 burger.addEventListener('click', () => {
   console.log(nav.classList)
   nav.classList.toggle('open-menu')
@@ -42,4 +44,6 @@ modeSwitch.addEventListener('click', function () {
     modeSwitch.checked ? 
     document.documentElement.setAttribute("data-theme", "dark") : 
     document.documentElement.setAttribute("data-theme", "");
+
+
 });
