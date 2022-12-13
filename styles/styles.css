@@ -113,6 +113,8 @@ h2 {
   /* font-size: 2rem; */
   font-size: clamp(2rem, 7vw, 3.5rem);
   font-weight: 400;
+  color: var(--c-color-dark);
+
 }
 
 h3 {
