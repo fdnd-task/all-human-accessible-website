@@ -81,7 +81,8 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   overflow-x: hidden;
 }
 
@@ -114,7 +115,6 @@ h2 {
   font-size: clamp(2rem, 7vw, 3.5rem);
   font-weight: 400;
   color: var(--c-color-dark);
-
 }
 
 h3 {
@@ -194,14 +194,20 @@ p {
 
 header {
   display: flex;
+  flex-direction: column;
+}
+
+header .site-header {
+  display: flex;
   justify-content: space-between;
   padding: 1rem 5%;
   flex-wrap: wrap;
   height: 60px;
+  position: relative;
 }
 
 .site-identity {
-  z-index: 2;
+  z-index: 999;
 }
 
 .site-identity img {
@@ -209,30 +215,40 @@ header {
   margin-top: 0rem;
 }
 
-@media screen and (min-width: 640px) {
-  header {
+@media screen and (min-width: 707px) {
+  
+
+  header .site-header {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    flex-wrap: wrap;
     height: auto;
+    position: relative;
   }
+
   .site-identity img {
     width: 15rem;
   }
 }
 
-@media screen and (min-width: 1100px) {
-  header {
+@media screen and (min-width: 1100px) { 
+
+  header .site-header {
     display: flex;
-    flex-direction: row;
-    padding: 0 5%;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    flex-wrap: nowrap;
+    height: auto;
+    position: relative;
   }
 
   .site-identity img {
     margin-top: 1.5rem;
     width: 20rem;
   }
+
+  
 }
 
 /* burger*/
@@ -242,7 +258,7 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 707px) {
   .burger {
     display: flex;
     align-items: center;
@@ -353,10 +369,10 @@ header nav .main-nav li a {
   color: var(--c-color-light-solid);
 }
 
-
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 707px) {
   header nav {
     display: flex;
+    flex-direction: row;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -371,7 +387,12 @@ header nav .main-nav li a {
   header .main-nav {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    gap: var(--smal-gap);
+    margin: 0;
+    width: 100%;
   }
 
   header nav .main-nav li {
@@ -434,6 +455,7 @@ header nav .main-nav li a {
   background-size: cover;
   color: var(--c-color-light-solid);
   overflow: hidden;
+  margin-top: -40px;
 }
 
 .header-style-afbeeldingen {
@@ -453,21 +475,18 @@ header nav .main-nav li a {
 /* volgende drie zijn de curve van huistyle*/
 .vervoerregio-path-box {
   width: 100%;
-  height: calc(100vh - 60px);
+  height: auto;
   max-height: 1080px;
   display: flex;
-  align-items: flex-end;
-  position: absolute;
-  top: 0;
+  left: 0;
   z-index: 5;
 }
 
 .vervoerregio-path-box-devided {
-  position: absolute;
   display: flex;
   flex-direction: row;
   width: inherit;
-  height: 100%;
+  height: 40px;
 }
 
 .responsive-width {
@@ -489,6 +508,7 @@ header nav .main-nav li a {
 
 .header-style-content {
   padding: 0rem 10%;
+  padding-top: 60px;
   width: 100%;
 }
 
@@ -546,24 +566,22 @@ header nav .main-nav li a {
   );
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 707px) {
   .vervoerregio-path-box {
     width: 100%;
-    height: 30px;
+    height: auto;
+    max-height: 1080px;
     display: flex;
-    align-items: flex-end;
-    position: absolute;
-    position: relative;
-    top: 0;
+    left: 0;
     z-index: 5;
-  }
+  } 
 
   .vervoerregio-path-box-devided {
     position: absolute;
     display: flex;
     flex-direction: row;
     width: inherit;
-    height: 100%;
+    height: 60px;
   }
 
   .vervoerregio-path-box svg,
@@ -575,6 +593,8 @@ header nav .main-nav li a {
   .header-style,
   .header-style-afbeeldingen {
     margin-top: -1rem;
+    margin-top: -60px;
+
   }
 
   .header-style {
@@ -606,6 +626,8 @@ header nav .main-nav li a {
   .header-style,
   .header-style-afbeeldingen {
     margin-top: -2.5rem;
+    margin-top: -60px;
+
   }
 
   .header-style {
@@ -643,6 +665,8 @@ header nav .main-nav li a {
 
 .socialmedias-button {
   display: flex;
+  align-items: flex-end;
+  height: calc(100vh - 60px);
   z-index: 8;
   position: absolute;
   width: 80vw;
@@ -660,7 +684,8 @@ header nav .main-nav li a {
 }
 
 .button {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   margin: 0;
   height: 5rem;
   width: 100%;
@@ -671,7 +696,6 @@ header nav .main-nav li a {
   transition: all 0.3s ease-out;
   z-index: 10;
   text-decoration: none;
-
 }
 
 .socialmedias-button .button .icon {
@@ -689,7 +713,7 @@ header nav .main-nav li a {
   background: #4267b2;
 }
 
-.socialmedias-button .button:nth-child(2){
+.socialmedias-button .button:nth-child(2) {
   background: #1da1f2;
 }
 
@@ -705,15 +729,15 @@ header nav .main-nav li a {
   background: #333;
 }
 
-
-
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 707px) {
   .socialmedias-button {
     display: flex;
     z-index: 10;
     position: absolute;
     width: auto;
     right: 5%;
+    height: auto;
+    bottom: 0;
     transform: none;
   }
 
@@ -755,7 +779,6 @@ header nav .main-nav li a {
     line-height: 40px;
     transition: all 0.3s ease-out;
     font-size: 20px;
-
   }
 
   .socialmedias-button .button:nth-child(1):hover .icon,
