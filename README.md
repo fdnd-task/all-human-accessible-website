@@ -27,3 +27,16 @@
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
 
 This work is licensed under [GNU GPLv3](./LICENSE).
+
+<br><br><br>
+## Mijn website
+
+Dit is hoe mijn website er nu uit ziet met de laatste veranderingen
+<br>
+<img width="720" alt="image" src="https://user-images.githubusercontent.com/112861160/203871665-1043eac8-0220-4824-b90d-fe79747e6cbd.png">
+
+<br>
+
+Dit is hoe mijn website er uit zien op een mobile screen (is nieuw gemaakt/toegevoegd)
+
+<img src="https://user-images.githubusercontent.com/112861160/204240942-a4d3113b-483f-4715-8413-4e7a52009f8f.png" width="33%" min-width="200px"><img src="https://user-images.githubusercontent.com/112861160/204241243-fa997bc3-ef4b-45dc-ad63-f90785c3adff.png" width="33%" min-width="200px"><img src="https://user-images.githubusercontent.com/112861160/204241394-c7bfcda2-a1d5-42c0-b7ef-52fcc435ec6f.png" width="33%" max-width="200px">
