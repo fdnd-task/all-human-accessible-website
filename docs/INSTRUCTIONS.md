@@ -27,7 +27,7 @@ Er worden verschillende workshops aangeboden:
 ## Definition of done
 Deze opdracht is done als:
 
-- [ ] Je hebt de feedback van de opdrachtgever tijdens de Sprint Review van Sprint 2 verwerkt
+- [ ] Je hebt de feedback van de opdrachtgever uit de Sprint Review van Sprint 2 verwerkt in je project
 - [ ] Je hebt een WCAG audit gedaan op de opdracht van de opdrachtgever, de gevonden problemen gedocumenteerd en verholpen
 - [ ] Je hebt een color contrast test gedaan en de testresultaten gedocumenteerd in issues 
 - [ ] Je hebt feedback gekregen van de opdrachtgever tijdens de Sprint Review en de feedback gedocumenteerd in een issue
