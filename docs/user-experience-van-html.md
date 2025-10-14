@@ -50,7 +50,7 @@ Met zoiets simpels als een link kun je al alle kanten op. <!-- Hrhr --> Wil je d
 
 ### Afbeeldingen
 
-Door foto's, logo's en andere visuele afbeeldingen toe te voegen in HTML, maken we het meteen ingewikkeld. Niet iedere browser kan namelijk de afbeeldingen downloaden, en niet ieder _mens_ kan überhaupt _zien_. In HTML willen we met die gebruikerservaring ook rekening houden.
+Door foto's, logo's en andere afbeeldingen toe te voegen in HTML, maken we het meteen ingewikkeld. Niet iedere browser kan namelijk de afbeeldingen downloaden, en niet ieder _mens_ kan überhaupt _zien_. In HTML willen we met die gebruikerservaring ook rekening houden.
 
 Voeg in jouw `ux.html` de volgende subkop toe, `<h2 id="afbeeldingen">Afbeeldingen</h2>`. We hebben nog geen afbeeldingen, maar de HTML kunnen we wel alvast schrijven. Zet de volgende HTML onder je kop: `<a href="ux.html"><img width="200" height="100"></a>`, en bekijk het resultaat in je browser.
 
@@ -58,11 +58,11 @@ De afbeelding kan nog niet gedownload worden, dus de browser tekent hier ook gee
 
 #### Oefeningen
 
-- Voeg het _attribuut_ `alt="UX van HTML"` toe aan de `<img>` tag, en bekijk het in je browser. Welke UX vinden jullie beter als de afbeelding niet getoond kan worden?
+- Voeg het _attribuut_ `alt="UX van HTML"` toe aan de `<img>` tag, en bekijk het in je browser. Wat werkt beter als de afbeelding niet getoond kan worden?
 
-- We gaan nu tekst én een icoon toevoegen aan onze link, ook al hebben we de afbeelding voor het icoontje nog niet. En we hebben net geleerd dat een `alt` attribuut “beter” is voor de UX, dus die zetten we er ook meteen in. We willen immers het juiste doen. Gebruik de volgende HTML: `<a href="ux.html"><img alt="UX van HTML">UX van HTML</a>`, en bekijk het in je browser. Hm, is dit nou echt beter? Wat als je van dat `alt` attribuut `alt="Icoon"`, of `alt="Download icoon"` maakt? En wat als je gewoon `alt=""` doet in dit geval? Welke UX vinden jullie beter?
+- We gaan nu een link met tekst én een icoon toevoegen, ook al hebben we de afbeelding voor het icoontje nog niet. En we hebben net geleerd dat een `alt` attribuut “beter” is voor de UX, dus die zetten we er ook meteen in. We willen immers het juiste doen. Gebruik de volgende HTML: `<a href="ux.html"><img alt="UX van HTML">UX van HTML</a>`, en bekijk het in je browser. Hm, is dit nou echt beter? Wat als je van dat `alt` attribuut `alt="Icoon"`, of `alt="Download icoon"` maakt? En wat als je gewoon `alt=""` doet in dit geval? Welke UX vind je beter?
 
-- Onderzoek en bespreek met je tafel en mentor op welke verschillende manieren je afbeeldingen kunt gebruiken, en wat voor soort `alt` attributen daarbij horen. Schrijf en schets drie verschillende manier en voorbeelden op het whiteboard.
+- Onderzoek en bespreek met je tafel en mentor op welke verschillende manieren je afbeeldingen kunt gebruiken. Wat voor soort `alt` attributen horen daarbij? Schrijf en schets drie verschillende manieren en voorbeelden op het whiteboard.
 
 Nu weet je waarom je altijd na moet denken over de inhoud van je `alt` attributen, en waarom dat bijvoorbeeld in Lighthouse en de WCAG richtlijnen langskomt. De context van een afbeelding is relevant bij het schrijven van een `alt` attribuut.
 
@@ -70,26 +70,45 @@ Nu weet je waarom je altijd na moet denken over de inhoud van je `alt` attribute
 
 - [`<img>`: The Image Embed element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
 - [Het `alt` attribuut](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/alt#usage_notes)
-- [Requirements for providing text to act as an alternative for images @ de HTML specificatie (geavanceerd)](https://html.spec.whatwg.org/multipage/images.html#alt)
-
-
-# Alles hieronder moet ik nog even nalopen :) Gaat hier en daar nog wat veranderen—Krijn
+- [Requirements for providing text to act as an alternative for images @ de HTML specificatie (geavanceerd)](https://html.spec.whatwg.org/dev/images.html#:~:text=4.8.4.3%20Requirements%20for%20providing%20text%20to%20act%20as%20an%20alternative%20for%20images)
 
 
 ### Labels voor invoervelden
 
-Bij het maken van formulieren, voor bijvoorbeeld filters of zoekvelden, kun je verschillende invoervelden gebruiken. Denk aan een lijst met checkboxes of radios. Voor formulieren hangt een goede UX onder andere af van goede labels.
+Bij het maken van formulieren, voor bijvoorbeeld filters of zoekvelden, kun je verschillende invoervelden gebruiken. Denk aan een lijst met _checkboxes_ of _radio buttons_. Voor formulieren hangt een goede UX onder andere af van goede _labels_.
 
-Maak een nieuwe subkop aan, `<h2>Labels voor invoervelden</h2>`, plak de volgende HTML eronder, en test het in je browser door verschillende docenten aan te klikken.
+Maak een nieuwe subkop aan, `<h2 id="labels">Labels voor invoervelden</h2>`, plak de volgende HTML eronder, en test het in je browser door jouw docenten te selecteren.
 
 ```html
 <fieldset>
   <legend>Docenten</legend>
   <ul>
-    <li><input type="checkbox"> Charley</li>
+    <li><input type="checkbox"> Docent 1</li>
+    <li><input type="checkbox"> Docent 2</li>
+    <li><input type="checkbox"> Docent 3</li>
+    <li><input type="checkbox"> Docent 4</li>
+    <li><input type="checkbox"> Docent 5</li>
+    <li><input type="checkbox"> Docent 6</li>
+    <li><input type="checkbox"> Docent 7</li>
+    <li><input type="checkbox"> Docent 8</li>
+    <li><input type="checkbox"> Docent 9</li>
+    <li><input type="checkbox"> Docent 10</li>
+  </ul>
+</fieldset>
+```
+
+Inderdaad, hoe weet je nou wie welke docent is? Blijkbaar is het handig om een goed _tekstlabel_ te geven aan een invoerelement.
+
+Probeer dit eens:
+
+```html
+<fieldset>
+  <legend>Docenten</legend>
+  <ul>
     <li><input type="checkbox"> Cyd</li>
-    <li><input type="checkbox"> Dion</li>
     <li><input type="checkbox"> Dorien</li>
+    <li><input type="checkbox"> Gwen</li>
+    <li><input type="checkbox"> Jad</li>
     <li><input type="checkbox"> Joost</li>
     <li><input type="checkbox"> Justus</li>
     <li><input type="checkbox"> Koop</li>
@@ -100,11 +119,11 @@ Maak een nieuwe subkop aan, `<h2>Labels voor invoervelden</h2>`, plak de volgend
 </fieldset>
 ```
 
-De UX van deze HTML verschrikkelijk. Lighthouse klaagt er ook over. WCAG audit niet gehaald ... Helaas ...
+Al iets beter, maar de UX van deze HTML is nog steeds verschrikkelijk. Lighthouse klaagt er ook over als je het test. WCAG audit niet gehaald.. Helaas..
 
-#### Beantwoord onderstaande vragen op het whiteboard:
+#### Oefeningen
 
-- Doe een Lighthouse test op de HTML met input en labels. Welke melding krijg je van de test?
+- Commit en Push je code naar GitHub Pages, en doe een Lighthouse Accessibility test op de HTML met input en labels. Welke melding krijg je van de test?
 
 - Wat nou als je elke `<input>` én elke docent samen in één `<label>` zet? Dat ziet er zo uit: `<label><input type="checkbox">Naam</label>`. Test de wijzigingen, welke UX vinden jullie beter?.
 
