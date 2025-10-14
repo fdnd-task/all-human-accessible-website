@@ -8,30 +8,30 @@ Als frontender heb je de verantwoordelijkheid om een goede gebruikerservaring vo
 
 ### Aanpak
 
-Voordat je kunt bepalen wat goede HTML is, moet je vooral leren wat HTML zoal kan. En welke functionaliteiten je van de browser gratis krijgt, als je de juiste HTML elementen schrijft.
+Voordat je kunt bepalen wat goede HTML is, moet je vooral leren wat HTML zoal kan. En welke functionaliteiten je van de browser gratis krijgt, als je de juiste HTML elementen kiest.
 
-Vandaag ga je lezen en leren wat verschillende (interactieve) HTML elementen in een browser doen: links, afbeeldingen, labels, headings en details. Studenten die al wat verder zijn, kunnen ook experimenteren met popups.
+Vandaag ga je leren wat verschillende (interactieve) HTML elementen in een browser doen.
 
-Open je code editor en maak een blanco HTML pagina in je editor, noem deze `ux.html` en sla deze op in jouw i-love-web repo. Begin met een `<h1>UX in HTML</h1>` en een paragraaf met daarin je favoriete HTML element, en voor hoeveel procent je HTML denkt te kennen; `<p>Mijn favoriete HTML element is ... en ik ken HTML voor ...%</p>`. Schrijf dit ook op het whiteboard, zodat we kunnen beginnen.
+Open je code editor en maak een blanco HTML pagina in je editor, noem deze `ux.html` en sla deze op in jouw i-love-web repo. Begin met een `<h1>UX van HTML</h1>`. Schrijf daarna op het whiteboard je favoriete HTML element, zodat we kunnen beginnen.
 
 
 ### Links
 
 De allereerste browser ooit, zo'n 30 jaar geleden, kon al met links (_anchors_, `<a href="...">`) overweg. Sindsdien is er alleen maar leuk spul bijgekomen in HTML.
 
-Maak een eerste subkop in je HTML document, `<h2>Links</h2>`. Schrijf daaronder een simpele link (naar zichzelf) `<a href="ux.html">UX in HTML<a>` en open de pagina in een willekeurige browser.
+Maak een eerste subkop in je HTML document, `<h2>Links</h2>`. Schrijf daaronder een simpele link naar dezelfde pagina, `<a href="ux.html">UX van HTML<a>`, en open de pagina in een willekeurige browser.
 
 #### Beantwoord onderstaande vragen op het whiteboard:
 
 - Onderzoek met je tafel welke functionaliteiten _verschillende browsers_ je geven bij zo'n link. Gebruik je rechtermuisknop, doe een _long tap_ op je telefoon, gebruik de Shift-, Control-, Command-, Option- en Alt-toetsen (of een combinatie van die toetsen) bij het klikken op die link.
 
-- Voeg het `download` attribuut toe, en onderzoek wat er met de functionaliteit in de browser verandert. (Dit attribuut werkt niet in elke browser lokaal, in Firefox bijvoorbeeld wel.)
+- Voeg het `download` attribuut toe, en onderzoek wat er met de functionaliteit in de browser verandert. (Dit attribuut werkt niet in elke browser lokaal, in Firefox bijvoorbeeld wel. Het kan dus zijn dat je dit even via een push naar GitHub Pages moet testen.)
 
 - Verander het `download` attribuut naar `target="_blank"`, en onderzoek wat er met de functionaliteit in de browser verandert, als je op de link klikt.
 
 - Voeg ook een `<button>Knop</button>` toe aan je HTML. Krijg je hiermee dezelfde functionaliteit van de browser?
 
-- Voeg meerdere `<a href="...">` links toe aan je HTML, en probeer met alleen je toetsenbord de links te bereiken en te volgen. Wat is de standaard tabvolgorde?
+- Voeg meerdere `<a href="...">` links toe aan je HTML, en probeer met alleen je toetsenbord de links te bereiken en te volgen. Wat is de standaard _tabvolgorde_?
 
 - Je kunt met een `<a href="#deel-2">` ook linken naar verschillende onderdelen binnen dezelfde pagina door naar een `id` te verwijzen, bijvoorbeeld `<section id="deel-2">`. Met de pseudo-selector`:target` kun je daar in CSS wat mee doen.
 
@@ -55,9 +55,9 @@ De afbeelding kan nog niet gedownload worden, dus de browser tekent hier ook gee
 
 #### Beantwoord onderstaande vragen op het whiteboard:
 
-- Voeg `alt="UX in HTML"` toe aan de `<img>` tag, en bekijk het in je browser. Welke UX vinden jullie beter als de afbeelding niet getoond kan worden?
+- Voeg `alt="UX van HTML"` toe aan de `<img>` tag, en bekijk het in je browser. Welke UX vinden jullie beter als de afbeelding niet getoond kan worden?
 
-- We gaan nu tekst én een icoon toevoegen aan onze link, ook al hebben we de afbeelding voor het icoontje nog niet. En we hebben net geleerd dat een `alt` attribuut “beter” is voor de UX, dus die zetten we er ook meteen in. We willen immers het juiste doen. Gebruik de volgende HTML: `<a href="ux.html"><img alt="UX in HTML">UX in HTML</a>`, en bekijk het in je browser. Hm, is dit nou echt beter? Wat als je van dat `alt` attribuut `alt="Icoon"`, of `alt="Download icoon"` maakt? En wat als je gewoon `alt=""` doet in dit geval? Welke UX vinden jullie beter?
+- We gaan nu tekst én een icoon toevoegen aan onze link, ook al hebben we de afbeelding voor het icoontje nog niet. En we hebben net geleerd dat een `alt` attribuut “beter” is voor de UX, dus die zetten we er ook meteen in. We willen immers het juiste doen. Gebruik de volgende HTML: `<a href="ux.html"><img alt="UX van HTML">UX van HTML</a>`, en bekijk het in je browser. Hm, is dit nou echt beter? Wat als je van dat `alt` attribuut `alt="Icoon"`, of `alt="Download icoon"` maakt? En wat als je gewoon `alt=""` doet in dit geval? Welke UX vinden jullie beter?
 
 - Onderzoek en bespreek met je tafel op welke verschillende manieren je afbeeldingen kunt gebruiken, en wat voor soort `alt` attributen daarbij horen. Schrijf alle manieren op het whiteboard.
 
