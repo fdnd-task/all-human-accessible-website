@@ -123,7 +123,9 @@ Al iets beter, maar de UX van deze HTML is nog steeds verschrikkelijk. Lighthous
 
 #### Oefeningen
 
-- Commit en Push je code naar GitHub Pages, en doe een Lighthouse Accessibility test op de HTML met input en labels. Welke melding krijg je van de test?
+- Commit en Push je code naar GitHub Pages, en doe een Lighthouse Accessibility test op de HTML met input en labels. Krijg je ook deze melding te zien in je test?
+
+<img width="618" height="93" alt="image" src="https://github.com/user-attachments/assets/f20c1c6a-75be-468d-b1f2-8eefeae8021f" />
 
 - Wat nou als je elke `<input>` én elke docent samen in één `<label>` zet? Dat ziet er zo uit: `<label><input type="checkbox">Naam</label>`. Test de wijzigingen, welke UX vinden jullie beter?.
 
