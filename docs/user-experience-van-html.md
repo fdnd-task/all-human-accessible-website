@@ -72,11 +72,11 @@ Nu weet je waarom je altijd na moet denken over de inhoud van je `alt` attribute
 - [Requirements for providing text to act as an alternative for images @ de HTML specificatie (geavanceerd)](https://html.spec.whatwg.org/dev/images.html#:~:text=4.8.4.3%20Requirements%20for%20providing%20text%20to%20act%20as%20an%20alternative%20for%20images)
 
 
-### Labels voor invoervelden
+### Labels
 
 Bij het maken van formulieren, voor bijvoorbeeld filters of zoekvelden, kun je verschillende invoervelden gebruiken. Denk aan een lijst met _checkboxes_ of _radio buttons_. Voor formulieren hangt een goede UX onder andere af van goede _labels_.
 
-Maak een nieuwe subkop aan, `<h2 id="labels">Labels voor invoervelden</h2>`, plak de volgende HTML eronder, en test het in je browser door jouw docenten te selecteren.
+Maak een nieuwe subkop aan, `<h2 id="labels">Labels</h2>`, plak de volgende HTML eronder, en test het in je browser door jouw docenten te selecteren.
 
 ```html
 <fieldset>
@@ -253,13 +253,14 @@ Dit patroon noemen we vaak een _accordeon_, en heeft te maken met _progressive d
 
 - Zoek via je browser eens naar een stuk tekst dat ingeklapt is, met `Cmd+F` of `Ctrl+F`. Wat gebeurt er dan? Allemaal functionaliteit die je gratis krijgt, als je goede HTML gebruikt.
 
-- Schrijf een `<summary>`
+- Schrijf een `<summary>` element op het whiteboard als jullie klaar zijn.
 
 #### Bronnen
 
 - [`<details>`: The Details disclosure element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
 - [Het `open` attribuut](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details#open)
 - [Het `name` attribuut](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details#name)
+- [Using & Styling the Details Element](https://css-tricks.com/using-styling-the-details-element/)
 
 
 ### Popups
@@ -306,6 +307,8 @@ Dankjewel CSS.
 
 ### Hoe nu verder?
 
-Je hebt gezien dat HTML je veel biedt.
+Je hebt gezien dat HTML je veel biedt als _basislaag_. En met CSS als _extra laag_ kun je dit er vaak ook nog _mooi_ uit laten zien. Dit noemen we _Progressive Enhancement_: zoek de _simpelste_ techniek om iets voor elkaar te krijgen, en verrijk die pas daarna. HTML heeft meer dan 100 elementen, allemaal met hun eigen ingebouwde UX.
 
 Ga door met de issues uit je project board, en pas toe wat je de afgelopen dagen hebt geleerd over HTML en Toegankelijkheid. Misschien moet je hele stukken opnieuw schrijven door wat je hebt geleerd, maar dat is helemaal prima.
+
+Tijdens de Code/Design Review komende vrijdag krijg je feedback op je voortgang.
