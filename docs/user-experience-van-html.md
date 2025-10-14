@@ -19,23 +19,25 @@ Open je code editor en maak een blanco HTML pagina in je editor, noem deze `ux.h
 
 De allereerste browser ooit, zo'n 30 jaar geleden, kon al met links (_anchors_, `<a href="...">`) overweg. Sindsdien is er alleen maar leuk spul bijgekomen in HTML.
 
-Maak een eerste subkop in je HTML document, `<h2>Links</h2>`. Schrijf daaronder een simpele link naar dezelfde pagina, `<a href="ux.html">UX van HTML<a>`, en open de pagina in een willekeurige browser.
+Maak een eerste subkop in je HTML document, `<h2 id="links">Links</h2>`. Schrijf daaronder een simpele link naar dezelfde pagina, `<a href="ux.html">UX van HTML</a>`, push je werk naar GitHub Pages, en open de pagina in een willekeurige browser.
 
-#### Beantwoord onderstaande vragen op het whiteboard:
+#### Oefeningen
 
 - Onderzoek met je tafel welke functionaliteiten _verschillende browsers_ je geven bij zo'n link. Gebruik je rechtermuisknop, doe een _long tap_ op je telefoon, gebruik de Shift-, Control-, Command-, Option- en Alt-toetsen (of een combinatie van die toetsen) bij het klikken op die link.
 
-- Voeg het `download` attribuut toe, en onderzoek wat er met de functionaliteit in de browser verandert. (Dit attribuut werkt niet in elke browser lokaal, in Firefox bijvoorbeeld wel. Het kan dus zijn dat je dit even via een push naar GitHub Pages moet testen.)
+- Voeg het `download` attribuut toe, en onderzoek wat er met de functionaliteit in de browser verandert. (Dit attribuut werkt niet in elke browser lokaal, in Firefox bijvoorbeeld wel. Het kan dus zijn dat je dit weer even via een push naar GitHub Pages moet testen.)
 
 - Verander het `download` attribuut naar `target="_blank"`, en onderzoek wat er met de functionaliteit in de browser verandert, als je op de link klikt.
 
 - Voeg ook een `<button>Knop</button>` toe aan je HTML. Krijg je hiermee dezelfde functionaliteit van de browser?
 
-- Voeg meerdere `<a href="...">` links toe aan je HTML, en probeer met alleen je toetsenbord de links te bereiken en te volgen. Wat is de standaard _tabvolgorde_?
+- Voeg meerdere `<a href="...">` links toe aan je HTML, en probeer met alleen je de Tab toets op je toetsenbord de links te bereiken. Wat is de standaard _tabvolgorde_? Wat gebeurt er als je Shift+Tab gebruikt?
 
-- Je kunt met een `<a href="#deel-2">` ook linken naar verschillende onderdelen binnen dezelfde pagina door naar een `id` te verwijzen, bijvoorbeeld `<section id="deel-2">`. Met de pseudo-selector`:target` kun je daar in CSS wat mee doen.
+- Je kunt met `<a href="#links">` ook linken naar verschillende onderdelen binnen dezelfde pagina, door naar een `id` te verwijzen. Probeer maar uit. Wat doet dat met de tabvolgorde?
 
-Met zoiets simpels als een link kun je al alle kanten op. <!-- Hrhr --> Wil je de eindgebruiker dus de mogelijkheid geven om ergens _heen_ te gaan, gebruik dan een `<a>` (_anchor_). En dus geen `<button>`, want daarbij krijg je niet die functionaliteit van een browser.
+- Schrijf op het whiteboard de CSS selector waarmee je jouw favoriete HTML element kunt selecteren, als je daar heen zou linken.
+
+Met zoiets simpels als een link kun je al alle kanten op. <!-- Hrhr --> Wil je de eindgebruiker dus de mogelijkheid geven om ergens _heen_ te gaan, gebruik dan een `<a>` (_anchor_).
 
 #### Bronnen
 
@@ -45,21 +47,22 @@ Met zoiets simpels als een link kun je al alle kanten op. <!-- Hrhr --> Wil je d
 - [Het `target` attribuut](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#target)
 - [De `:target` selector in CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/:target)
 
+
 ### Afbeeldingen
 
-Door foto's, logo's en andere visuele afbeeldingen toe te voegen in HTML, maken we het meteen ingewikkeld. Niet iedere browser kan namelijk de afbeeldingen downloaden, en niet ieder mens kan überhaupt _zien_. In HTML willen we met die gebruikerservaring ook rekening houden.
+Door foto's, logo's en andere visuele afbeeldingen toe te voegen in HTML, maken we het meteen ingewikkeld. Niet iedere browser kan namelijk de afbeeldingen downloaden, en niet ieder _mens_ kan überhaupt _zien_. In HTML willen we met die gebruikerservaring ook rekening houden.
 
-Voeg in jouw `ux.html` de volgende subkop toe, `<h2>Afbeeldingen</h2>`. We hebben nog geen afbeeldingen, maar de HTML kunnen we wel alvast schrijven. Zet de volgende HTML onder je kop: `<a href="ux.html"><img width="200" height="100"></a>`, en bekijk het resultaat in je browser.
+Voeg in jouw `ux.html` de volgende subkop toe, `<h2 id="afbeeldingen">Afbeeldingen</h2>`. We hebben nog geen afbeeldingen, maar de HTML kunnen we wel alvast schrijven. Zet de volgende HTML onder je kop: `<a href="ux.html"><img width="200" height="100"></a>`, en bekijk het resultaat in je browser.
 
 De afbeelding kan nog niet gedownload worden, dus de browser tekent hier ook geen pixels.
 
-#### Beantwoord onderstaande vragen op het whiteboard:
+#### Oefeningen
 
-- Voeg `alt="UX van HTML"` toe aan de `<img>` tag, en bekijk het in je browser. Welke UX vinden jullie beter als de afbeelding niet getoond kan worden?
+- Voeg het _attribuut_ `alt="UX van HTML"` toe aan de `<img>` tag, en bekijk het in je browser. Welke UX vinden jullie beter als de afbeelding niet getoond kan worden?
 
 - We gaan nu tekst én een icoon toevoegen aan onze link, ook al hebben we de afbeelding voor het icoontje nog niet. En we hebben net geleerd dat een `alt` attribuut “beter” is voor de UX, dus die zetten we er ook meteen in. We willen immers het juiste doen. Gebruik de volgende HTML: `<a href="ux.html"><img alt="UX van HTML">UX van HTML</a>`, en bekijk het in je browser. Hm, is dit nou echt beter? Wat als je van dat `alt` attribuut `alt="Icoon"`, of `alt="Download icoon"` maakt? En wat als je gewoon `alt=""` doet in dit geval? Welke UX vinden jullie beter?
 
-- Onderzoek en bespreek met je tafel op welke verschillende manieren je afbeeldingen kunt gebruiken, en wat voor soort `alt` attributen daarbij horen. Schrijf alle manieren op het whiteboard.
+- Onderzoek en bespreek met je tafel en mentor op welke verschillende manieren je afbeeldingen kunt gebruiken, en wat voor soort `alt` attributen daarbij horen. Schrijf en schets drie verschillende manier en voorbeelden op het whiteboard.
 
 Nu weet je waarom je altijd na moet denken over de inhoud van je `alt` attributen, en waarom dat bijvoorbeeld in Lighthouse en de WCAG richtlijnen langskomt. De context van een afbeelding is relevant bij het schrijven van een `alt` attribuut.
 
@@ -68,6 +71,9 @@ Nu weet je waarom je altijd na moet denken over de inhoud van je `alt` attribute
 - [`<img>`: The Image Embed element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
 - [Het `alt` attribuut](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/alt#usage_notes)
 - [Requirements for providing text to act as an alternative for images @ de HTML specificatie (geavanceerd)](https://html.spec.whatwg.org/multipage/images.html#alt)
+
+
+# Alles hieronder moet ik nog even nalopen :) Gaat hier en daar nog wat veranderen—Krijn
 
 
 ### Labels voor invoervelden
