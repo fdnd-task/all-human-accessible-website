@@ -1,6 +1,6 @@
 # All Human - Accessible Website
 
-Ontwerp en maak voor een opdrachtgever een component/pagina/site toegankelijk volgens WCAG richtlijnen.
+Ontwerp en maak voor een opdrachtgever een website toegankelijk volgens WCAG richtlijnen.
 
 
 ## Context
