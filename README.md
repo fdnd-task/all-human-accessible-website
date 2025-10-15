@@ -1,6 +1,6 @@
 # Accessible Website
 
-Ontwerp en maak voor een opdrachtgever een component/pagina/site toegankelijk volgens WCAG richtlijnen.
+Ontwerp en maak voor een opdrachtgever een website toegankelijk volgens WCAG richtlijnen.
 
 De instructie van deze leertaak staat in [INSTRUCTIONS](https://github.com/fdnd-task/all-human-accessible-website/blob/main/docs/INSTRUCTIONS.md)
 
