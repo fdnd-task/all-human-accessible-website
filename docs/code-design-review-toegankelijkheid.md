@@ -28,7 +28,7 @@ Checklist code-review:
 - Als het goed is, heb jij een iteratie gemaakt op het ontwerp van de opdrachtgever. Dit kan een geheel nieuw ontwerp zijn, een kleine aanpassing op het bestaande ontwerp of een uitbreiding van het ontwerp op een ander device (je hebt bijvoorbeeld een desktop versie ontworpen).
 - Pak jouw iteratie op het bestaande ontwerp (schetsen of Figma) en de live link van je website erbij.
 - Noteer in je notitieboekje waar jij feedback op wilt ontvangen op het gemaakte ontwerp. 
-- Ga langs bij minimaal 2 mentoren om feedback te verzamelen. Maak van de feedback issues aan in jouw repo all-human-accessible-website. 
+- Ga langs bij minimaal 2 mentoren om feedback te verzamelen. Laat zien wat je had opgeschreven in je notitieboekje. Maak van de feedback issues aan in jouw repo all-human-accessible-website. 
 
 #### Bronnen
 
