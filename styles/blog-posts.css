@@ -1,0 +1,149 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    background: white;
+    width: 800px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(16, 24, 40, 0.08);
+    margin: 24px 0 80px;
+    box-shadow: 0 2.5px 0 #5d80a6;
+    border: 1.5px solid #5d80a6;
+}
+
+article img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.goBack {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    z-index: 10;
+}
+
+.back-btn {
+    background: rgba(255,255,255,0.95);
+    border: 1px solid #5d80a6;
+    color: #5d80a6;
+    padding: 8px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 0 #5d80a6;
+}
+
+.back-btn:focus {
+    outline: 1px solid #5d80a6;
+}
+
+.fa-space {
+    width: 40px;
+    height: 40px;
+}
+
+.back-btn i.fa-solid {
+    font-size: 18px;
+    line-height: 1;
+    color: #5d80a6;
+}
+
+article section {
+    padding: 35px 30px;
+}
+
+article h1 {
+    margin: 0 0 12px 0;
+    color: #5d80a6;
+}
+
+article .description {
+    color: #5d80a6;
+    margin: 0 0 18px 0;
+}
+
+article .content p {
+    line-height: 1.5;
+}
+
+article .content h2 {
+    margin-top: 20px;
+    color: #5d80a6;
+}
+
+.tags-share {
+    border-top: 1px solid #eef2f7;
+    padding: 20px 28px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tags-share .tags {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.tags-share .tags span {
+    background: #5d80a6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 #d4dadf;
+    border: 1px solid #d4dadf;
+}
+
+.share a {
+    color: #5d80a6;
+    text-decoration: none;
+    font-weight: 600
+}
+
+.share-btn {
+    background: #d4dadf;
+    color: #5d80a6;
+    border: 1px solid #5d80a6;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 2.5px 0 #5d80a6;
+}
+
+.share-btn:hover {
+    background-color: #5d80a6;
+    box-shadow: 0 -2px 0 hsla (0, 0%, 100%, .15);
+    color: white;
+}
+
+@media (max-width:900px) {
+    article img {
+        height: 250px
+    }
+
+    article section {
+        padding: 20px
+    }
+}
+
+@media (max-width:480px) {
+    article {
+        width: 100%
+    }
+
+    article img {
+        height: 150px
+    }
+}
