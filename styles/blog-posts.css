@@ -15,7 +15,46 @@ article {
 
 article img {
     width: 100%;
+    height: 400px;
     object-fit: cover;
+}
+
+.goBack {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    z-index: 10;
+}
+
+.back-btn {
+    background: rgba(255,255,255,0.95);
+    border: 1px solid #5d80a6;
+    color: #5d80a6;
+    padding: 8px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 0 #5d80a6;
+}
+
+.back-btn:focus {
+    outline: 1px solid #5d80a6;
+}
+
+.fa-space {
+    width: 40px;
+    height: 40px;
+}
+
+.back-btn i.fa-solid {
+    font-size: 18px;
+    line-height: 1;
+    color: #5d80a6;
 }
 
 article section {
@@ -62,6 +101,8 @@ article .content h2 {
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
+    box-shadow: 0 2px 0 #d4dadf;
+    border: 1px solid #d4dadf;
 }
 
 .share a {
@@ -73,7 +114,7 @@ article .content h2 {
 .share-btn {
     background: #d4dadf;
     color: #5d80a6;
-    border: none;
+    border: 1px solid #5d80a6;
     padding: 8px 12px;
     border-radius: 6px;
     cursor: pointer;
