@@ -177,7 +177,7 @@ article {
     transition: transform 180ms ease;
 }
 
-a{
+article a{
     text-decoration: none;
     color: black;
 }
