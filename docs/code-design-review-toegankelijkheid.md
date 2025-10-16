@@ -11,8 +11,6 @@ Daarnaast hebben we gekeken naar hoe je met HTML een goede User Experience (UX) 
 1. Push je laatste werk van de repository all-human-accessible-website naar GitHub, publiceer je site via GitHub Pages en plaats een link bij je repo. Zorg ook dat je issues aanstaan.
 2. Lees onderstaande checklist om de code review straks mee uit te voeren.
 
-<br/>
-
 Checklist code-review:
 - [ ] Test of de HTML valide is door een HTML validator check te doen op de W3C website: https://validator.w3.org. Schrijf een issue als er in de test problemen naar voren zijn gekomen, en voeg ook mogelijke oplossingen toe aan je issue.
 - [ ] Bekijk of de website gebruik maakt van `<a>` en/of `<button>`. Wordt het juiste HTML-element gebruikt voor links naar andere pagina's of externe bronnen? Worden links niet _in_ buttons genest? Kun je met je Tab-toets bij alle links komen? Maak zo nodig hier een issue voor aan.
@@ -21,8 +19,6 @@ Checklist code-review:
 - [ ] Bekijk de heading structuur als een inhoudsopgave. Je kan hiervoor een screen reader gebruiken, Polypane, of een browser extensie zoals HeadingsMap. Controleer of de heading levels correct zijn gebruikt. De volgende vragen kunnen je daarbij helpen: Is er een logische volgorde van de heading levels (`<h1>`, `<h2>`, `<h3>`, etc.)? Geeft deze een handige inhoudsopgave, of verwacht je andere headings? Is er maar één `<h1>` op de pagina? Worden er geen heading levels overgeslagen (bijvoorbeeld van `<h2>` naar `<h4>`)? Maak zo nodig hier een issue voor aan.
 - [ ] Zijn er “popups” of “uitklappers” gemaakt? Gebruiken die ook de juiste HTML, die je bijvoorbeeld met je toetsenbord kunt bedienen? Maak zo nodig hier een issue voor aan.
 - [ ] Controleer met de HeadingsMap browser extensie of _landmark_ elementen goed toegepast zijn. Maak zo nodig hier een issue voor aan.
-
-<br/>
 
 3. Bepaal samen met jullie mentor welke criteria nog toegevoegd kunnen worden aan de code review. Noteer minimaal vijf criteria voor de code review op het whiteboard. Tip: gebruik hiervoor de deeltaak [wcag-audit](https://github.com/fdnd-task/wcag-audit/blob/main/docs/INSTRUCTIONS.md), en met de handmatige tests.
 4. Vorm een duo binnen jouw groep en kies twee andere duo’s waarvan jullie de code gaan reviewen. Samen bespreken jullie de code en schieten jullie issues in. Jullie geven als duo dus feedback op het werk van vier verschillende klasgenoten.
