@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    border-top: 10px solid #5d80a6;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -11,6 +15,15 @@ body {
     font-size: 16px;
     font-family: 'Lato', sans-serif;
     background-color: #edf0f4;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../assets/backg.svg");
+    opacity: 0.1;
+    z-index: -1;
 }
 
 header {
@@ -91,7 +104,8 @@ label {
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 6px;
-    background-color: #fff;
+    background-color: #ffffff;
+    color: #5d80a6;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     appearance: none;
@@ -181,12 +195,12 @@ article p {
     body {
         display: flex;
         flex-direction: column;
-        justify-content: center; /* vertical */
-        align-items: center;     /* horizontal */
-        min-height: 100vh;       /* ensure body takes full viewport height */
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
     }
 
-        main {
+    main {
         width: 80%;
     }
 }
