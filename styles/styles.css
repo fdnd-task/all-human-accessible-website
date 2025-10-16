@@ -4,7 +4,7 @@ body {
     font-size: 16px;
     font-family: 'Lato', sans-serif;
     padding-bottom: 20px;
-    background-color: #19394f;
+    background-color: #efe5d7;
 }
 
 /* Header en navigatie */
@@ -90,7 +90,7 @@ section {
 @media (min-width: 768px) {
     section {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
         padding: 0 20px;
     }
@@ -132,7 +132,7 @@ section article {
 
     padding: 15px;
     border-radius: 10px;
-    background-color: #d1d7dc;
+    background-color: #e8dac6;
     /* background: #8c9ca7; */
     /* color: white; */
 }
@@ -242,11 +242,11 @@ section p {
 }
 
 
-article:hover {
-    background-color: #758895;
+/* article:hover {
+    background-color: #122837;
     cursor: pointer;
     color: white;
-}
+} */
 
 
 
