@@ -177,6 +177,11 @@ article {
     transition: transform 180ms ease;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 footer {
     background-color: #5d80a6;
     width: 100%;
