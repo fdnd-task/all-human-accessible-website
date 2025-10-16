@@ -65,10 +65,31 @@ select {
     line-height: inherit;
 }
 
+.select-wrap {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+}
+
+.select-wrap .select-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 18px;
+    color: #5d80a6;
+}
+
 label {
     font-weight: bold;
     margin-bottom: 5px;
     display: inline-block;
+    color: #5d80a6;
+}
+
+.fa-square-caret-down {
     color: #5d80a6;
 }
 
@@ -77,15 +98,20 @@ label {
     max-width: 400px;
     padding: 10px 12px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #5d80a6;
     border-radius: 6px;
     background-color: #ffffff;
     color: #5d80a6;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2.5px 0 #5d80a6;
     cursor: pointer;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
+}
+
+#hr-select {
+    padding-right: 40px;
 }
 
 #hr-select:focus {
@@ -117,6 +143,8 @@ article {
     flex-direction: column;
     filter: drop-shadow(5px 5px 10px #0000002c);
     margin-bottom: 40px;
+    box-shadow: 0 2px 0 #5d80a6;
+    border: 0.5px solid #5d80a6;
 }
 
 article img {
@@ -153,7 +181,9 @@ article p {
     background-color: #5d80a6;
     color: white;
     padding: 5px 10px;
+    border: 1px solid #d4dadf;
     border-radius: 5px;
+    box-shadow: 0 2.5px 0 #d4dadf;
 }
 
 .article-link {
@@ -167,17 +197,18 @@ article p {
     border-radius: 20px;
 }
 
-article:hover, .article-link:hover {
+#caseStudies article:hover,
+.article-link:hover {
     transform: translateY(-6px);
     transition: transform 180ms ease;
     cursor: pointer;
 }
 
-article {
+#caseStudies article {
     transition: transform 180ms ease;
 }
 
-article a{
+article a {
     text-decoration: none;
     color: black;
 }
