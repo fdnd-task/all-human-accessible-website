@@ -6,7 +6,7 @@ Daarnaast hebben we gekeken naar hoe je met HTML een goede User Experience (UX) 
 
 ### Aanpak
 
-#### 1. Code review toegankelijkheid
+#### Code review toegankelijkheid (09:30–11:30)
 
 1. Push je laatste werk van de repository all-human-accessible-website naar GitHub, publiceer je site via GitHub Pages en plaats een link bij je repo. Zorg ook dat je issues aanstaan.
 2. Lees onderstaande checklist om de code review straks mee uit te voeren.
@@ -24,9 +24,7 @@ Checklist code-review:
 4. Vorm een duo binnen jouw groep en kies twee andere duo’s waarvan jullie de code gaan reviewen. Samen bespreken jullie de code en schieten jullie issues in. Jullie geven als duo dus feedback op het werk van vier verschillende klasgenoten.
 5. Gebruik de checklist hierboven en de workshop [user-experience-van-html](https://github.com/fdnd-task/all-human-accessible-website/blob/main/docs/user-experience-van-html.md#links) van woensdag om de code review te doen.
 
-<br/>
-
-#### 2. Design review (vanaf 11:30)
+#### Design review (vanaf 11:30)
 - Als het goed is, heb jij een iteratie gemaakt op het ontwerp van de opdrachtgever. Dit kan een geheel nieuw ontwerp zijn, een kleine aanpassing op het bestaande ontwerp of een uitbreiding van het ontwerp op een ander device (je hebt bijvoorbeeld een desktop versie ontworpen).
 - Pak jouw iteratie op het bestaande ontwerp (schetsen of Figma) en de live link van je website erbij.
 - Noteer waar in jouw ontwerp je graag feedback op wil ontvangen.
