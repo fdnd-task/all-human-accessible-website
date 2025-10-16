@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+:root {
+  --lichtgroene-kleur: #9ad0c2;
+}
+
+.span-lichtgroenekleur {
+  background: var(--lichtgroene-kleur);
+  border-radius: 50px;
+  padding: 0 10px;
+  color: white;
+}
