@@ -13,11 +13,9 @@
 </head>
 
 <body>
-
     <header>
-        <a href="https://civicinteractiondesign.com" aria-label="Go to homepage">
-            <img src="assets/DFR.png" alt="HvA logo">
-        </a>
+        <img src="assets/DFR.png">
+
         <p>
             Design for Recognition explores how image recognition technologies shape the ethics of being
             seen.
@@ -26,275 +24,287 @@
 
     <main>
 
-        <!-- <div class="InputContainer">
-            <input placeholder="Search" id="input" class="input" name="text" type="text" />
+        <h1>Case studies</h1>
 
-            <label class="labelforsearch" for="input">
-                <svg class="searchIcon" viewBox="0 0 512 512">
-                    <path
-                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
-                    </path>
-                </svg>
-            </label>
-        </div> -->
+        <section id="caseStudies">
 
-        <section>
+            <section id="filters">
+                <label for="hr-select">Filter case studies</label> <br />
 
-            <a href="share-open-statistics.html">
+                <select name="tags" id="hr-select">
+                    <option value="">Choose a filter</option>
+                    <hr />
+                    <optgroup label="Process step">
+                        <option value="Evaluating">Evaluating</option>
+                        <option value="Deployment">Deployment</option>
+                        <option value="Articulating">Articulating</option>
+                        <option value="Making">Making</option>
+                    </optgroup>
+                    <hr />
+                    <optgroup label="Participation level">
+                        <option value="Transparency">Transparency</option>
+                        <option value="Actionable">Actionable</option>
+                        <option value="Legible">Legible</option>
+                        <option value="Relatable">Relatable</option>
+                        <option value="Contestable">Contestable</option>
+
+                    </optgroup>
+                    <hr />
+                    <optgroup label="Execution">
+                        <option value="Concept">Concept</option>
+                        <option value="Experiment Performed">Experiment Performed</option>
+                        <option value="Method">Method</option>
+                    </optgroup>
+
+                </select>
+            
+            </section>
+
+            <section id="articles">
                 <article>
                     <img src="assets/open-statestieken.jpg" alt="A printed sheet of analytics">
-                    <div class="tags">
-                        <button>Image recognition</button>
-                    </div>
-                    <h2>Share open statistics</h2>
-                    <p>When cameras with image recognition are deployed, for example, in parking scan cars or
-                        scanning bicycles,
-                        this often makes a process more efficient. But specific data or statistics about these savings
-                        are not available to residents or visitors. Why not? Could radical openness also advance the
-                        debate
-                        about the use of this technology and lead to new insights among the public?
-                    </p>
-                    <button class="btn">
-                        See more
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px"
-                            width="15px" class="icon">
-                            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10"
-                                stroke-width="1.5" stroke="#292D32"
-                                d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008">
-                            </path>
-                        </svg>
-                    </button>
-                </article>
-            </a>
 
-            <a href="share-open-statistics.html">
+                    <div class="article-content">
+                        <h2>Share open statistics</h2>
+                        <p>
+                            When cameras with image recognition are deployed, for example, in parking scan cars or scan
+                            bikes,
+                            this often makes a process more efficient. But specific data or statistics about these
+                            savings
+                            are
+                            not available to residents or visitors. Why not? Could radical openness also advance the
+                            debate
+                            about the use of this technology and lead to new insights among the public?
+                        </p>
+                        <div class="tags">
+                            <hr>
+                            <label>Tags</label>
+                            <dl>
+                                <dt>Evaluating</dt>
+                                <dt>Transparency</dt>
+                                <dt>Concept</dt>
+                            </dl>
+                        </div>
+                    </div>
+                </article>
+
                 <article>
                     <img src="assets/chatten-met-de-handhaver.webp" alt="A space filled with people behind a computer">
-                    <div class="tags">
-                        <button>Image recognition</button>
-                        <button>Scan car</button>
-                    </div>
-                    <h2>Chat with the enforcement officer</h2>
-                    <p>Now that parking enforcement is being carried out by a parking scanner car instead of an
-                        enforcement
-                        officer on the street, there's
-                        no one around to ask questions. The enforcement officer is currently in the office, at the
-                        computer.
-                        In
-                        between, he has to wait long periods until new photos of a potential illegal parker appear. Can
-                        the
-                        enforcement officer answer questions at the same time? Could we set up a helpdesk for people
-                        with
-                        pressing
-                        questions?
-                    </p>
-                    <button class="btn">
-                        See more
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px"
-                            width="15px" class="icon">
-                            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10"
-                                stroke-width="1.5" stroke="#292D32"
-                                d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008">
-                            </path>
-                        </svg>
-                    </button>
-                </article>
-            </a>
 
-            <a href="share-open-statistics.html">
+                    <div class="article-content">
+                        <h2>Chat with the enforcement officer</h2>
+                        <p>
+                            Now that parking enforcement is being carried out by a parking scanner car instead of an
+                            officer
+                            on
+                            the street, there's no one around to ask questions. The officer is currently in the office,
+                            at
+                            the
+                            computer. In between, they have to wait long periods until new photos of a potential illegal
+                            parker
+                            appear. Can the officer answer questions at the same time? Could we set up a helpdesk for
+                            people
+                            with urgent questions?
+                        </p>
+                        <div class="tags">
+                            <hr>
+                            <label>Tags</label>
+                            <dl>
+                                <dt>Deployment</dt>
+                                <dt>Actionable</dt>
+                                <dt>Concept</dt>
+                            </dl>
+                        </div>
+                    </div>
+                </article>
+
                 <article>
                     <img src="assets/seintje-bij-het-fotograferen.jpg" alt="A closeup of a camera lens">
-                    <div class="tags">
-                        <button>Image recognition</button>
-                    </div>
-                    <h2>Signal when taking photos</h2>
-                    <p>People often think they're being filmed when they see cameras. Sometimes they wave at them.
-                        Usually,
-                        photos are taken as soon as an object is recognized. So no video clips are saved, and no one is
-                        watching live. To make this clear, you can make it visible when a photo is being taken.
-                        For example, with a light or an opening aperture. It's important that the "signal" is clearly
-                        visible in daylight, or in the case of a parking scanner, on a passing object.</p>
-                    <button class="btn">
-                        See more
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px"
-                            width="15px" class="icon">
-                            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10"
-                                stroke-width="1.5" stroke="#292D32"
-                                d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008">
-                            </path>
-                        </svg>
-                    </button>
-                </article>
-            </a>
 
-            <a href="share-open-statistics.html">
+                    <div class="article-content">
+                        <h2>Signal when taking photos</h2>
+                        <p>
+                            People often think they're being filmed when they see cameras. Sometimes they wave at them.
+                            Usually,
+                            photos are taken as soon as an object is detected. So, no video clips are saved, and no one
+                            is
+                            watching live. To make this clear, you can make it visible when a photo is being taken. For
+                            example,
+                            with a light or an opening aperture. It's important that the "signal" is clearly visible in
+                            daylight, or in the case of a parking sensor, on a passing object.
+                        </p>
+                        <div class="tags">
+                            <hr>
+                            <label>Tags</label>
+                            <dl>
+                                <dt>Deployment</dt>
+                                <dt>Legible</dt>
+                                <dt>Concept</dt>
+                                <dt>Experiment Performed</dt>
+                            </dl>
+                        </div>
+                    </div>
+                </article>
+
                 <article>
                     <img src="assets/cameradoos-met-vorm-en-richting.jpg" alt="A street security camera on a pole">
-                    <div class="tags">
-                        <button>Image recognition</button>
-                        <button>Scan car</button>
-                    </div>
-                    <h2>Camera box with shape and direction</h2>
-                    <p>Street cameras often point in one direction, but that's not the case on a parking scanner car.
-                        They're even a bit hidden. The camera box on the car becomes a kind of "all-seeing eye": but
-                        that's
-                        of course not the case. Could we communicate its operation better by adjusting the shape of the
-                        camera box?
-                    </p>
-                    <button class="btn">
-                        See more
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px"
-                            width="15px" class="icon">
-                            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10"
-                                stroke-width="1.5" stroke="#292D32"
-                                d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008">
-                            </path>
-                        </svg>
-                    </button>
-                </article>
-            </a>
 
-            <a href="share-open-statistics.html">
+                    <div class="article-content">
+                        <h2>Camerabox with shape and direction</h2>
+                        <p>
+                            Street cameras often point in one direction, but that's not the case on a parking scanner
+                            car.
+                            They're even somewhat hidden. The camera box on the car thus becomes a kind of "all-seeing
+                            eye"—but
+                            of course, that's not the case. Could we better communicate its operation by adjusting the
+                            shape
+                            of
+                            the camera box?
+                        </p>
+                        <div class="tags">
+                            <hr>
+                            <label>Tags</label>
+                            <dl>
+                                <dt>Deployment</dt>
+                                <dt>Legible</dt>
+                                <dt>Concept</dt>
+                            </dl>
+                        </div>
+                    </div>
+                </article>
+
                 <article>
                     <img src="assets/maquette-voor-de-digitale-openbare-ruimte.jpg"
                         alt="A scaled model of a street with traffic">
-                    <div class="tags">
-                        <button>Image recognition</button>
-                        <button>Scan bike</button>
+
+                    <div class="article-content">
+                        <h2>Model for the digital public space</h2>
+                        <p>
+                            Various tools and discussion formats are available for public consultation sessions about
+                            physical
+                            changes in the city. Consider, for example, a scale model that everyone can walk around to
+                            assess
+                            the plan's impact. Such formats don't exist for digital changes in the city, even though
+                            these
+                            types
+                            of plans can still impact public spaces. Can you create a digital scale model for
+                            participatory
+                            meetings about (invisible) technology in the city?
+                        </p>
+                        <div class="tags">
+                            <hr>
+                            <label>Tags</label>
+                            <dl>
+                                <dt>Articulating</dt>
+                                <dt>Relatable</dt>
+                                <dt>Concept</dt>
+                                <dt>Experiment Performed</dt>
+                                <dt>Method</dt>
+                            </dl>
+                        </div>
                     </div>
-                    <h2>Model for the digital public space</h2>
-                    <p>Various tools and discussion formats are available for consultation evenings about physical
-                        changes
-                        in the city.
-
-                        For example, consider a scale model that everyone can walk around to assess the plan's impact.
-                        Such
-                        formats don't exist for digital changes in the city, even though these
-
-                        types of plans can also have an impact on public space. Can you create a digital scale model for
-                        participatory meetings about (invisible) technology in the city?
-                    </p>
-                    <button class="btn">
-                        See more
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px"
-                            width="15px" class="icon">
-                            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10"
-                                stroke-width="1.5" stroke="#292D32"
-                                d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008">
-                            </path>
-                        </svg>
-                    </button>
                 </article>
-            </a>
 
-            <a href="share-open-statistics.html">
                 <article>
                     <img src="assets/ga-de-straat-op.jpg" alt="A point of view of being interviewed in public">
-                    <div class="tags">
-                        <button>Image recognition</button>
-                        <button>Scan bike</button>
-                    </div>
-                    <h2>Take to the streets!</h2>
-                    <p>Municipal technology projects are often only released to the public once they are completely
-                        finished. That is logical; you don't want to make a blunder. But there's also value in
-                        presenting an
-                        unfinished
-                        product to the public. By presenting a mock-up as early as possible, you can learn how
-                        people
-                        see
-                        the product
-                        and what they think it does. You can then adjust the design accordingly. A conversation on
-                        the
-                        street can also provide you with new perspectives: for example, does it also work well for
-                        the
-                        elderly?
-                        Or for people in wheelchairs?
-                    </p>
-                    <button class="btn">
-                        See more
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px"
-                            width="15px" class="icon">
-                            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10"
-                                stroke-width="1.5" stroke="#292D32"
-                                d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008">
-                            </path>
-                        </svg>
-                    </button>
-                </article>
-            </a>
 
-            <a href="share-open-statistics.html">
+                    <div class="article-content">
+                        <h2>Take to the streets!</h2>
+                        <p>
+                            Municipal technology projects are often only released to the public once they're completely
+                            finished. That's understandable; you don't want to make a blunder. But there's also value in
+                            presenting an unfinished product to the public. By presenting a mock-up as early as
+                            possible,
+                            you
+                            can learn how people perceive the product and what they think it does. You can then adjust
+                            the
+                            design accordingly. A conversation on the street can also offer new perspectives: for
+                            example,
+                            does
+                            it also work well for the elderly? Or for people in wheelchairs?
+                        </p>
+                        <div class="tags">
+                            <hr>
+                            <label>Tags</label>
+                            <dl>
+                                <dt>Making</dt>
+                                <dt>Contestable</dt>
+                                <dt>Concept</dt>
+                                <dt>Experiment Performed</dt>
+                                <dt>Method</dt>
+                            </dl>
+                        </div>
+                    </div>
+                </article>
+
                 <article>
                     <img src="assets/waardenkaartjes.jpg" alt="People discussing papers on a table">
-                    <div class="tags">
-                        <button>Image recognition</button>
-                        <button>Scan bike</button>
-                    </div>
-                    <h2>Value cards</h2>
-                    <p>Coalition agreements, policy documents, and implementation agendas often describe
-                        ambitions and
-                        public values that apply to the use of technology in the city. During a participatory
-                        meeting,
-                        you
-                        ask for feedback from residents. It would be helpful if residents clearly identified
-                        these
-                        democratically agreed-upon values, so that it is clear how the proposal should be
-                        assessed. The
-                        value cards are a useful tool for this.
-                    </p>
-                    <button class="btn">
-                        See more
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px"
-                            width="15px" class="icon">
-                            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10"
-                                stroke-width="1.5" stroke="#292D32"
-                                d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008">
-                            </path>
-                        </svg>
-                    </button>
-                </article>
-            </a>
 
-            <a href="share-open-statistics.html">
+                    <div class="article-content">
+                        <h2>Value cards</h2>
+                        <p>
+                            Coalition agreements, policy documents, and implementation agendas often outline ambitions
+                            and
+                            public values ​​applicable to the use of technology in the city. During a participatory
+                            meeting,
+                            you
+                            can ask residents for feedback. It would be helpful if residents had clearly identified
+                            these
+                            democratically agreed-upon values, so it's clear how the proposal should be assessed. The
+                            value
+                            cards are a useful tool for this.
+                        </p>
+                        <div class="tags">
+                            <hr>
+                            <label>Tags</label>
+                            <dl>
+                                <dt>Articulating</dt>
+                                <dt>Contestable</dt>
+                                <dt>Concept</dt>
+                                <dt>Experiment Performed</dt>
+                                <dt>Method</dt>
+                            </dl>
+                        </div>
+                    </div>
+                </article>
+
                 <article>
                     <img src="assets/menselijke-maat-bepalen.jpg" alt="People attending a presentation">
-                    <div class="tags">
-                        <button>Image recognition</button>
-                        <button>Scan car</button>
-                    </div>
-                    <h2>Determining human scale</h2>
-                    <p>In a digital system like the parking scanner car, every exception must be coded. For
-                        some
-                        exceptions, this isn't a problem because they occur frequently. Consider, for
-                        example, people
-                        who
-                        park and only pay 5 minutes later. Such an exception is built into the algorithm.
-                        But there are
-                        also
-                        exceptional situations in which you receive a fine, while most people actually think
-                        it is
-                        unnecessary.
-                        In these situations, you could say: the human touch is missing. We organized a quiz,
-                        where a
-                        group of people votes on the justification of a fine. Could such a human feedback
-                        loop also
-                        become part of the digitized process?
-                    </p>
-                    <button class="btn">
-                        See more
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px"
-                            width="15px" class="icon">
-                            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10"
-                                stroke-width="1.5" stroke="#292D32"
-                                d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008">
-                            </path>
-                        </svg>
-                    </button>
-                </article>
-            </a>
-        </section>
 
+                    <div class="article-content">
+                        <h2>Determining human scale</h2>
+                        <p>
+                            In a digital system like the parking scanner car, every exception must be coded. For some
+                            exceptions, this isn't a problem because they're common. Consider, for example, people who
+                            park
+                            and
+                            pay five minutes later. Such an exception is built into the algorithm. But there are also
+                            exceptional situations where you receive a fine, even though most people actually think it's
+                            unnecessary. In these situations, you could say that the human touch is missing. We
+                            organized a
+                            quiz
+                            where a group of people voted on the justification of a fine. Could such a human feedback
+                            loop
+                            also
+                            become part of the digitalized process?
+                        </p>
+                        <div class="tags">
+                            <hr>
+                            <label>Tags</label>
+                            <dl>
+                                <dt>Making</dt>
+                                <dt>Actionable</dt>
+                                <dt>Concept</dt>
+                                <dt>Experiment Performed</dt>
+                            </dl>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+        </section>
     </main>
+
 </body>
 
 </html>
