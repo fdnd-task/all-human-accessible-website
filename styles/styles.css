@@ -156,6 +156,27 @@ article p {
     border-radius: 5px;
 }
 
+.article-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.article-link:focus {
+    outline: 5px solid #5d80a6;
+    border-radius: 20px;
+}
+
+article:hover, .article-link:hover {
+    transform: translateY(-6px);
+    transition: transform 180ms ease;
+    cursor: pointer;
+}
+
+article {
+    transition: transform 180ms ease;
+}
+
 footer {
     background-color: #5d80a6;
     width: 100%;
