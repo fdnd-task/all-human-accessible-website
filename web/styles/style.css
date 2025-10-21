@@ -192,3 +192,19 @@ section:nth-of-type(2) {
     transform: translateX(-50%);
   }
 }
+
+#naarBovenKnop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  aspect-ratio: 1/1;
+  display: none;
+  background-color: var(--lichtgroene-kleur);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
