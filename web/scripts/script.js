@@ -1,4 +1,7 @@
 const goTopBtn = document.getElementById("naarBovenKnop");
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+const body = document.body;
 
 window.onscroll = function() {
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
@@ -8,6 +11,9 @@ window.onscroll = function() {
   }
 };
 
-goTopBtn.addEventListener("click", function() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+hamburger.addEventListener('click', () => {
+  const menuIsHidden = mobileMenu.classList.toggle('hidden');
+
+  body.classList.toggle('no-scroll', !menuIsHidden);
 });
+

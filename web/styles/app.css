@@ -24,10 +24,8 @@ body {
 
 a {
   text-decoration: none;
-  border: 1px solid black;
   border-radius: 50px;
   color: black;
-  padding: 5px 15px;
 }
 
 li {
