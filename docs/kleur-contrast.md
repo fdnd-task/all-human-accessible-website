@@ -133,6 +133,10 @@ Kleurcontrast kan je testen en beoordelen met behulp van de WCAG richtlijnen.
 - [Accessible contrast ratios and A-levels explained](https://www.getstark.co/blog/accessible-contrast-ratios-and-a-levels-explained/)
 - [contrast-ratio.org](https://contrast-ratio.org/)
 
+## Door met je project
+
+Ga hierna door met de openstaande issues op je project. Heb je al een [WCAG audit](https://github.com/fdnd-task/wcag-audit) op je eigen werk gedaan? Heb je gevonden problemen al in issues gedocumenteerd, en verholpen? Heb je feedback van de opdrachtgever al kunnen verwerken?
+
 <!-- 
 Related WCAG success criteria
 1.4.3 Minimum contrast (AA)
