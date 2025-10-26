@@ -135,7 +135,7 @@ Kleurcontrast kan je testen en beoordelen met behulp van de WCAG richtlijnen.
 
 ## Door met je project
 
-Ga hierna door met de openstaande issues op je project. Heb je al een [WCAG audit](https://github.com/fdnd-task/wcag-audit) op je eigen werk gedaan? Heb je gevonden problemen al in issues gedocumenteerd, en verholpen? Heb je feedback van de opdrachtgever al kunnen verwerken?
+Ga hierna door met de openstaande issues op je project. Heb je al een [WCAG audit](https://github.com/fdnd-task/wcag-audit) op je eigen werk gedaan? Heb je gevonden problemen al in issues gedocumenteerd, en verholpen? Heb je feedback van de opdrachtgever uit de vorige sprint al kunnen verwerken?
 
 <!-- 
 Related WCAG success criteria
