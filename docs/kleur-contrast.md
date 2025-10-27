@@ -115,7 +115,7 @@ In de richtlijnen staat waar je kleurcontrasten aan moeten voldoen voor een goed
 Voor contrasten worden 3 *levels* onderscheiden:
 
 - A level: het minimale niveau waar het contrast aan moet voldoen
-- AA level: een contrast niveau dat voor de meeste gebruikers toegenkelijk is
+- AA level: een contrast niveau dat voor de meeste gebruikers toegankelijk is
 - AAA level: het hoogste niveau, het is toegankelijk voor alle gebruikers
 
 Kleurcontrast kan je testen en beoordelen met behulp van de WCAG richtlijnen.
