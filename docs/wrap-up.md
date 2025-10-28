@@ -23,3 +23,7 @@ Als mensen jouw werk bekijken, wordt eerst de Readme gelezen om te begrijpen wat
 In Sprint 2 heb je geleerd hoe je een nette Readme kan maken. Dit kan je weer toepassen in deze sprint. Bekijk je Readme van de vorige sprint, bedenk wat je deze keer beter kunt doen, en waar je de nadruk op wil leggen. Je hebt aan Toegankelijkheid gewerkt deze sprint, dus waarschijnlijk wil je daar iets over schrijven. Gebruik de uitleg en bronnen uit de vorige sprint als leidraad: https://github.com/fdnd-task/the-client-website/blob/main/docs/wrap-up.md
 
 Laat ook andere studenten naar jouw readme kijken en geef feedback op elkaars voorbereiding.
+
+### Bevindingen WCAG Audit doorvoeren in je project
+
+Als het goed is heb je een WCAG audit gedaan op je werk voor de opdrachtgever en de gevonden problemen gedocumenteerd. Heb je dat niet gedaan, doe dat dan alsnog. Zorg ervoor dat de gevonden problemen verholpen zijn vóór de sprint review. 
