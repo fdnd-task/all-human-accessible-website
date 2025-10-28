@@ -15,15 +15,16 @@ De Sprint Review is geen Powerpoint presentatie. Het is de bedoeling om feedback
 
 Bereid de Sprint Review voor met alle studenten die dezelfde opdracht hebben. Schrijf op het whiteboard samen wat tegenviel vorige keer, of wat je gemist hebt. Bedenk ook hoe je het deze keer beter kunt gaan doen. Misschien wel door je beter voor te bereiden op de Sprint Review. In Sprint 2 heb je geleerd hoe je dat goed kunt doen. Doorloop dezelfde stappen voor een goede voorbereiding: https://github.com/fdnd-task/the-client-website/blob/main/docs/sprint-review.md
 
+### Bevindingen WCAG Audit doorvoeren in je project
+
+Als het goed is heb je een WCAG audit gedaan op je werk voor de opdrachtgever en de gevonden problemen gedocumenteerd, zie [de DoD's van de leertaak](https://github.com/fdnd-task/all-human-accessible-website/blob/main/docs/INSTRUCTIONS.md#definition-of-done). Doe dat eerst, als je dat nog niet hebt gedaan. Zorg ervoor dat de gevonden problemen verholpen zijn vóór de sprint review. 
 
 ### Readme
 
 Als mensen jouw werk bekijken, wordt eerst de Readme gelezen om te begrijpen wat je gedaan hebt. Het is belangrijk om dit bestand heel duidelijk te schrijven.
 
-In Sprint 2 heb je geleerd hoe je een nette Readme kan maken. Dit kan je weer toepassen in deze sprint. Bekijk je Readme van de vorige sprint, bedenk wat je deze keer beter kunt doen, en waar je de nadruk op wil leggen. Je hebt aan Toegankelijkheid gewerkt deze sprint, dus waarschijnlijk wil je daar iets over schrijven. Gebruik de uitleg en bronnen uit de vorige sprint als leidraad: https://github.com/fdnd-task/the-client-website/blob/main/docs/wrap-up.md
+In Sprint 2 heb je geleerd hoe je een nette Readme kan maken. Dit kan je weer toepassen in deze sprint. Bekijk je Readme van de vorige sprint, bedenk wat je deze keer beter kunt doen, en waar je de nadruk op wil leggen. Je hebt aan Toegankelijkheid gewerkt deze sprint, vermeld door jou gevonden problemen en hoe je ze hebt opgelost. Gebruik de uitleg en bronnen uit de vorige sprint als leidraad: https://github.com/fdnd-task/the-client-website/blob/main/docs/wrap-up.md
 
 Laat ook andere studenten naar jouw readme kijken en geef feedback op elkaars voorbereiding.
 
-### Bevindingen WCAG Audit doorvoeren in je project
 
-Als het goed is heb je een WCAG audit gedaan op je werk voor de opdrachtgever en de gevonden problemen gedocumenteerd, zie [de DoD's van de leertaak](https://github.com/fdnd-task/all-human-accessible-website/blob/main/docs/INSTRUCTIONS.md#definition-of-done). Doe dat eerst, als je dat nog niet hebt gedaan. Zorg ervoor dat de gevonden problemen verholpen zijn vóór de sprint review. 
