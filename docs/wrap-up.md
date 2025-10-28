@@ -26,4 +26,4 @@ Laat ook andere studenten naar jouw readme kijken en geef feedback op elkaars vo
 
 ### Bevindingen WCAG Audit doorvoeren in je project
 
-Als het goed is heb je een WCAG audit gedaan op je werk voor de opdrachtgever en de gevonden problemen gedocumenteerd. Heb je dat niet gedaan, doe dat dan alsnog. Zorg ervoor dat de gevonden problemen verholpen zijn vóór de sprint review. 
+Als het goed is heb je een WCAG audit gedaan op je werk voor de opdrachtgever en de gevonden problemen gedocumenteerd, zie [de DoD's van de leertaak](https://github.com/fdnd-task/all-human-accessible-website/blob/main/docs/INSTRUCTIONS.md#definition-of-done). Doe dat eerst, als je dat nog niet hebt gedaan. Zorg ervoor dat de gevonden problemen verholpen zijn vóór de sprint review. 
