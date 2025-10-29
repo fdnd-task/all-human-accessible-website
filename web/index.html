@@ -10,12 +10,22 @@
     <link rel="stylesheet" href="./styles/footer.css">
   </head>
   <body>
+    <main>
+      <div class="header-container" role="header-container">
     <header>
-      <ul>
-        <li><a href="">Studenten</a></li>
-        <li><a href="">Docenten</a></li>
-      </ul>
-      <ul>
+      <nav>
+        <ul>
+          <li>
+            <a href="">Studenten</a>
+          </li>
+          <li>
+            <a href="">Docenten</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <header>
+        <ul>
         <li>
           <button id="hamburger" aria-label="Menu">
             <svg
@@ -51,7 +61,8 @@
         </li>
       </ul>
     </header>
-    <section>
+  </div>
+    <section class="intro">
       <ul>
         <h1>
           Welkom bij het
@@ -61,8 +72,7 @@
         <p>
           Het <b>Overlegplatform Associate degrees</b> is opgericht in 2019 en
           biedt een platform voor iedereen die geïnteresseerd is in
-          Ad-onderwijs. Alle bekostigde hogescholen die Ad-opleidingen aanbieden
-          of dit willen gaan doen, kunnen deelnemen aan het platform.
+          Ad-onderwijs. 
         </p>
         <li>
           <a href="./pages/Leesmeer.html">Lees meer <span></span>
@@ -80,8 +90,10 @@
 </svg>
           </a>
         </li>
-      </ul>
+      
       <ul class="auto-scroll">
+        <span class="scroll-p"> Alle bekostigde hogescholen die Ad-opleidingen aanbieden of dit willen gaan doen, kunnen deelnemen aan het platform.</span>
+
         <div class="scroll-track">
           <img src="./assets/images/accociate-academie.png" alt="Slide 1" />
           <img src="./assets/images/aeres-hogeschoo.jpg" alt="Slide 2" />
@@ -464,6 +476,49 @@
         />
       </svg>
     </button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script>
+      gsap.from(".intro h1", {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        ease: "power3.out"
+      });
+    
+      gsap.from(".intro p", {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        delay: 0.2,
+        ease: "power3.out"
+      });
+    
+      gsap.from(".intro a", {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        delay: 0.4,
+        ease: "power3.out"
+      });
+
+      gsap.from(".intro .scroll-p", {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        delay: 0.6,
+        ease: "power3.out"
+      });
+
+      gsap.from(".intro .scroll-track", {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        delay: 0.8,
+        ease: "power3.out"
+      });
+    </script>
+    
     <script src="./scripts/script.js"></script>
+  </main>
   </body>
 </html>
