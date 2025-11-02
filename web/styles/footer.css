@@ -1,54 +1,91 @@
 footer {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  padding: 20px;
+  min-height: 50vh;
+  background: var(--donkergroene-kleur);
+  color: white;
+  position: relative;
+  padding-top: 20px;
 
-  ul:nth-of-type(1) {
+  ul:nth-of-type(2) {
+    padding: 20px 20px 60px 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 
-    div {
-      width: 100%;
-      height: 150px;
-      border-radius: 10px;
-      background-color: var(--lichtgroene-kleur);
-    }
-  }
+    a {
+      color: white;
 
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-
-    li {
-      display: flex;
-      padding-bottom: 20px;
-      gap: 20px;
-      border-bottom: 1px solid rgb(231, 231, 231);
-
-      div {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-
-        p:nth-of-type(2) {
-          color: #a2a2a2;
-          font-size: 16px;
-        }
+      &:hover {
+        color: var(--lichtgroene-kleur);
+        transition: 0.3s;
       }
     }
+  }
 
-    span {
-      min-width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: var(--lichtgroene-kleur);
+  .p-title {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 0 5px;
+  }
+
+  ul:last-of-type {
+    background-color: hsl(165, 36%, 20%);
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding: 9px;
+    bottom: 0;
+
+    p {
+      font-size: 0.9rem;
     }
   }
+}
+
+footer li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+footer li h3 {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+/* Add arrow */
+footer li h3::after {
+  position: absolute;
+  right: -20px;
+  transition: transform 0.3s ease;
+}
+
+/* default hidden content */
+footer ul > div {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 30px;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+/* visible when open */
+footer ul > div.open {
+  max-height: 300px;
+  opacity: 1;
+  display: flex;
+  padding-left: 30px;
+  flex-direction: column;
+  gap: 5px;
+  padding-bottom: 10px;
+}
+
+/* rotate arrow when open */
+footer li.open h3::after {
+  transform: rotate(180deg);
 }

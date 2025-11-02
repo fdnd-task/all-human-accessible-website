@@ -2,7 +2,6 @@
 *::before,
 *::after {
   scroll-behavior: smooth;
-  overflow-x: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,6 +9,7 @@
 
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -74,4 +74,20 @@ a {
 
 li {
   list-style: none;
+}
+
+#naarBovenKnop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  aspect-ratio: 1/1;
+  display: none;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
 }
