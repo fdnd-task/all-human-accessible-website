@@ -3,10 +3,16 @@
 Ontwerp en maak voor een opdrachtgever een component/pagina/site toegankelijk volgens WCAG richtlijnen.nDe instructie van deze leertaak staat in [INSTRUCTIONS](https://github.com/fdnd-task/all-human-accessible-website/blob/main/docs/INSTRUCTIONS.md)
 
 ## Samenvatting 
-Ik heb een WCAG (Web Content Accessibility Guidelines) audit uitgevoerd op de website van mijn werk, De Koning.
+Ik heb een WCAG (Web Content Accessibility Guidelines) audit uitgevoerd op de website van mijn werk, De Koning en mijn eigen website voor de opdrachtgever.
 WCAG beschrijft hoe je moet ontwerpen en coderen zodat iedereen een website kan gebruiken ook zonder muis, zonder zicht, of met spraak- of toetsenbordbediening.
 
+### Bestaande website 
 De Lighthouse test kwam uit op een accessibility score van 88. Op zich is dit vrij hoog, maar ik kwam erachter dat Lighthouse niet alles zegt en dat er nog veel meer testen bij komen kijken.
+
+Ik ben tot de conclusie gekomen dat de website qua structuur vrij rommelig is en dat het best lastig wordt gemaakt voor mensen met een visuele beperking. Er moet beter worden gelet op de toegankelijkheid voor mensen die screenreaders gebruiken.
+
+### Eigen website
+De Lighthouse test kwam uit op een accessibility score van 78. Op zich is dit vrij hoog, maar ik kwam erachter dat Lighthouse niet alles zegt en dat er nog veel meer testen bij komen kijken.
 
 Ik ben tot de conclusie gekomen dat de website qua structuur vrij rommelig is en dat het best lastig wordt gemaakt voor mensen met een visuele beperking. Er moet beter worden gelet op de toegankelijkheid voor mensen die screenreaders gebruiken.
 
