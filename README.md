@@ -14,7 +14,7 @@ Ik ben tot de conclusie gekomen dat de website qua structuur vrij rommelig is en
 ### Eigen website
 De Lighthouse test kwam uit op een accessibility score van 78. Op zich is dit vrij hoog, maar ik kwam erachter dat Lighthouse niet alles zegt en dat er nog veel meer testen bij komen kijken.
 
-Ik ben tot de conclusie gekomen dat de website qua structuur vrij rommelig is en dat het best lastig wordt gemaakt voor mensen met een visuele beperking. Er moet beter worden gelet op de toegankelijkheid voor mensen die screenreaders gebruiken.
+Ik ben tot de conclusie gekomen dat website best goed in elkaar zit, ik moet alleen letten op de functie namen van elementen zodat de screen readers weten wat ze doen. Ook belangrijk is offscreen elementen die ik moet weghalen.
 
 ## Inhoudsopgave
 
