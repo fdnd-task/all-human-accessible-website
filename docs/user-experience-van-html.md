@@ -68,7 +68,7 @@ Nu weet je waarom je altijd na moet denken over de inhoud van je `alt` attribute
 #### Bronnen
 
 - [`<img>`: The Image Embed element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
-- [Het `alt` attribuut](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/alt#usage_notes)
+- [Een beslisboom voor je `alt` attribuut](https://www.w3.org/WAI/tutorials/images/decision-tree/)
 - [Requirements for providing text to act as an alternative for images @ de HTML specificatie (geavanceerd)](https://html.spec.whatwg.org/dev/images.html#:~:text=4.8.4.3%20Requirements%20for%20providing%20text%20to%20act%20as%20an%20alternative%20for%20images)
 
 
