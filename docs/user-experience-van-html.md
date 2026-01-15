@@ -210,6 +210,7 @@ Door je content een goede heading structuur te geven, zorg je dat bijvoorbeeld _
 - [`<h1>`–`<h6>`: The HTML Section Heading elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements)
 - [Bronnen WCAG Audit deeltaak](https://github.com/fdnd-task/wcag-audit/blob/main/docs/INSTRUCTIONS.md#bronnen-handmatige-tests)
 - [Web Developer toolbar browser extensie](https://chrispederick.com/work/web-developer/)
+- [HeadingsMap Chrome extensie](https://chromewebstore.google.com/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi) (ook voor [Firefox](https://addons.mozilla.org/en-US/firefox/addon/headingsmap/))
 - [Gebruik de tools binnen Polypane om de toegankelijkheid en bruikbaarheid te testen](https://polypane.app/) (gratis voor studenten, via de [GitHub Student Developer Pack](https://polypane.app/github-students/))
 
 
