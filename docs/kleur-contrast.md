@@ -11,9 +11,9 @@ Je denkt misschien dat iedereen kleuren en contrasten op een zelfde manier ervaa
 Verschillende apparaten laten kleuren op een andere manier zien, een Kindle heeft bijvoorbeeld een zwart-wit scherm. Ook de *display settings* van een scherm zijn van invloed op de kleuren, een scherm kan donker maar ook heel *bright* ingesteld staan, en veranderen gedurende de dag. Ook omgevingslicht zoals zonlicht is bepalend, probeer maar eens teksten te lezen op je mobiel als de zon in je scherm schijnt.
 
 Naast de omgevingsfactoren kan het natuurlijk ook voorkomen dat je gebruikers kleurenblind of slechtziend zijn.
+Gebruikers kunnen permanente, tijdelijke of situationele beperkingen ondervinden - [microsoft.com/design/inclusive](https://inclusive.microsoft.design/)
+![](inclusive-microsoft-design-toolkit.png)  
 
-![](inclusive-microsoft-design-toolkit.png)
-*Gebruikers kunnen permanente, tijdelijke of situationele beperkingen ondervinden - [microsoft.com/design/inclusive](https://inclusive.microsoft.design/)*
 
 Door rekening te houden met kleuren en contrast kun je ervoor zorgen dat alle mensen de informatie op je website goed kunnen lezen en zien. In deze workshop ga je 4 opdrachten uitvoeren om te leren hoe je goede kleurcontrasten kan ontwerpen en testen:
 
@@ -21,11 +21,12 @@ Door rekening te houden met kleuren en contrast kun je ervoor zorgen dat alle me
 
 Een aanzienlijk deel van je bezoekers is kleurenblind en ziet kleuren misschien anders dan je hebt ontworpen. Ongeveer 10% van de mannen en bijna 2% van de vrouwen zijn kleurenblind. Zorg er daarom voor dat je naast kleuren altijd extra informatie toont om je boodschap over te brengen.
 
-![](energielabels.png)
-*De kleuren van de energielabels lopen van rood naar groen. Rood is slecht. Groen is goed.*
+De kleuren van de energielabels lopen van rood naar groen. Rood betekent hier slecht. Groen betekent goed:
+![](energielabels.png)  
 
-![](energielabels-deuteranopia.png)
-*Voor mensen die kleurenblind zijn, zijn de kleuren verwarrend, dezelfde kleuren worden gebruikt voor verschillende energielabels.*
+Voor mensen die kleurenblind zijn, zijn de kleuren verwarrend, dezelfde kleuren worden gebruikt voor verschillende energielabels:
+![](energielabels-deuteranopia.png)  
+
 
 ### Opdracht 
 
