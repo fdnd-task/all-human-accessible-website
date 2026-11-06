@@ -1,0 +1,739 @@
+
+:root {
+    --wit: #FFFFFF;
+    --mintgroen: #E8FCE8;
+    --grijsgroen: #C7D9C7;
+    --lichtgrijs: #A2B0A2;
+    --grijs: #7C877C;
+    --donkergrijs: #575E57;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--wit);
+    color: #000000;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-underline-offset: 4px;
+}
+
+a:hover {
+    text-decoration-thickness: 2px;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.3;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 12px 24px;
+    border-bottom: 1px solid var(--grijsgroen);
+}
+
+.logo-knop {
+    display: inline-flex;
+    align-items: center;
+}
+
+.logo-knop img {
+    display: block;
+    width: 200px;
+    height: 68px;
+    object-fit: contain;
+}
+
+.nav {
+    flex: 1;
+}
+
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 8px 4px;
+    color: var(--donkergrijs);
+    text-decoration: none;
+}
+
+.nav a:hover,
+.nav a[aria-current="page"] {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.github {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+.github img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+h1 {
+    margin-top: 0;
+    color: var(--donkergrijs);
+}
+
+
+.zoeken {
+    margin-top: 16px;
+}
+
+.zoeken label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="search"] {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    padding: 14px 16px;
+    border: 1px solid var(--grijs);
+    border-radius: 8px;
+    background-color: var(--wit);
+    color: #000000;
+    font: inherit;
+}
+
+.hoeveelheid-iconen {
+    margin-top: 12px;
+    color: var(--donkergrijs);
+    font-size: 14px;
+}
+
+
+.variant-knoppen {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.variant-knoppen button {
+    padding: 10px 16px;
+    border: 1px solid var(--grijsgroen);
+    border-radius: 8px;
+    background-color: var(--mintgroen);
+    color: var(--donkergrijs);
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.variant-knoppen button:hover {
+    background-color: var(--grijsgroen);
+}
+
+.variant-knoppen button.actief {
+    border-color: var(--grijsgroen);
+    background-color: var(--grijsgroen);
+    color: var(--donkergrijs);
+}
+
+/* Iconengalerij */
+
+.iconen-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 32px;
+}
+
+.iconen-grid article {
+    min-width: 0;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid var(--grijsgroen);
+    border-radius: 8px;
+    background-color: var(--wit);
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.iconen-grid article:hover {
+    background-color: var(--mintgroen);
+}
+
+.iconen-grid article img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.iconen-grid article p {
+    margin-bottom: 0;
+    color: var(--donkergrijs);
+    font-weight: bold;
+}
+
+
+.pagina-nummering {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 36px 0;
+}
+
+.pagina-nummering a,
+.pagina-inactief {
+    padding: 9px 14px;
+    border: 1px solid var(--grijsgroen);
+    border-radius: 6px;
+}
+
+.pagina-nummering a {
+    color: var(--donkergrijs);
+    background-color: var(--wit);
+    text-decoration: none;
+}
+
+.pagina-nummering a:hover,
+.pagina-nummering a[aria-current="page"] {
+    background-color: var(--mintgroen);
+}
+
+.pagina-inactief {
+    color: var(--grijs);
+}
+
+
+.eigenschappen {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 40px;
+    padding: 24px;
+    border-radius: 8px;
+    background-color: var(--mintgroen);
+    text-align: center;
+}
+
+.eigenschappen p {
+    margin: 0;
+}
+
+.eigenschappen strong {
+    color: var(--donkergrijs);
+    font-size: 1.2rem;
+}
+
+
+.extra-informatie {
+    margin-top: 48px;
+    padding: 32px;
+    border-radius: 8px;
+    background-color: var(--mintgroen);
+}
+
+.extra-informatie h2 {
+    margin-top: 0;
+    color: var(--donkergrijs);
+}
+
+.extra-informatie p {
+    max-width: 650px;
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+
+.categorieen {
+    margin-top: 48px;
+    padding: 32px;
+    border-radius: 8px;
+    background-color: var(--mintgroen);
+}
+
+.categorieen h2 {
+    margin-top: 0;
+    color: var(--donkergrijs);
+}
+
+.categorieen > p {
+    margin-bottom: 24px;
+}
+
+.categorieen-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.categorie-kaart {
+    min-width: 0;
+    padding: 24px;
+    border: 1px solid var(--grijsgroen);
+    border-radius: 8px;
+    background-color: var(--wit);
+    text-align: left;
+    transition: background-color 0.2s ease;
+}
+
+.categorie-kaart:hover {
+    background-color: var(--grijsgroen);
+}
+
+.categorie-kaart h3 {
+    margin-top: 0;
+    color: var(--donkergrijs);
+}
+
+.categorie-kaart p {
+    line-height: 1.6;
+}
+
+.categorie-kaart a {
+    color: var(--donkergrijs);
+    font-weight: bold;
+}
+
+/* Over de iconenset */
+
+.over-iconen {
+    max-width: 850px;
+    margin: 48px auto;
+    padding: 24px;
+}
+
+.over-iconen h2 {
+    color: var(--donkergrijs);
+}
+
+.over-iconen p {
+    line-height: 1.8;
+}
+
+.over-iconen a {
+    color: var(--donkergrijs);
+    font-weight: bold;
+}
+
+/* Bijdragen */
+
+.meedoen {
+    margin: 48px 0;
+    padding: 32px;
+    border-radius: 8px;
+    background-color: var(--grijsgroen);
+}
+
+.meedoen h2 {
+    margin-top: 0;
+    color: var(--donkergrijs);
+}
+
+.meedoen p {
+    max-width: 650px;
+    line-height: 1.7;
+}
+
+.meedoen a {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 12px 18px;
+    border: 1px solid var(--donkergrijs);
+    border-radius: 6px;
+    background-color: var(--mintgroen);
+    color: var(--donkergrijs);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.meedoen a:hover {
+    background-color: var(--wit);
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 48px;
+    padding: 32px;
+    background-color: var(--grijsgroen);
+    color: var(--donkergrijs);
+}
+
+footer > div {
+    flex: 1 1 220px;
+    min-width: 0;
+}
+
+footer h2 {
+    margin-top: 0;
+    font-size: 1rem;
+    color: var(--donkergrijs);
+}
+
+footer p,
+footer a {
+    color: var(--donkergrijs);
+    line-height: 1.7;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer li {
+    margin-bottom: 8px;
+}
+
+/* Toetsenbordbediening */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid var(--donkergrijs);
+    outline-offset: 3px;
+}
+
+/* Tablet */
+
+@media (max-width: 800px) {
+    header {
+        gap: 12px;
+    }
+
+    .nav {
+        order: 3;
+        flex-basis: 100%;
+    }
+
+    .nav ul {
+        justify-content: flex-start;
+    }
+
+    .iconen-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .categorieen-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .eigenschappen {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobiel */
+
+@media (max-width: 520px) {
+    header {
+        padding: 12px 16px;
+    }
+
+    .logo-knop img {
+        width: 160px;
+        height: auto;
+    }
+
+    .nav ul {
+        gap: 6px 14px;
+    }
+
+    main {
+        padding: 16px;
+    }
+
+    .iconen-grid {
+        gap: 12px;
+    }
+
+    .iconen-grid article {
+        padding: 12px 6px;
+    }
+
+    .iconen-grid article img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .categorieen {
+        padding: 20px 12px;
+    }
+
+    .categorieen-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .categorie-kaart {
+        padding: 18px;
+    }
+
+    .extra-informatie {
+        padding: 20px;
+    }
+
+    .over-iconen {
+        padding: 12px;
+    }
+
+    .meedoen {
+        padding: 24px 16px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 24px;
+        padding: 24px 16px;
+    }
+}
+
+.variant-knoppen input {
+    position: absolute;
+    opacity: 0;
+}
+
+.variant-knoppen label {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 1px solid var(--grijsgroen);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.variant-knoppen input:checked + label {
+    background-color: var(--mintgroen);
+    border-color: var(--grijs);
+}
+
+.iconen-grid .icoon-fill,
+.iconen-grid .icoon-regular,
+.iconen-grid .icoon-diapositive {
+    display: none;
+}
+
+body:has(#fill:checked) .iconen-grid .icoon-line,
+body:has(#regular:checked) .iconen-grid .icoon-line,
+body:has(#diapositive:checked) .iconen-grid .icoon-line {
+    display: none;
+}
+
+body:has(#fill:checked) .iconen-grid .icoon-fill {
+    display: block;
+}
+
+body:has(#regular:checked) .iconen-grid .icoon-regular {
+    display: block;
+}
+
+body:has(#diapositive:checked) .iconen-grid .icoon-diapositive {
+    display: block;
+}
+
+a img[alt="GitHub"] {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+a img[alt="GitHub"]:hover {
+    transform: scale(1.1);
+}
+
+a img[alt="GitHub"] {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+a img[alt="GitHub"]:hover {
+    transform: scale(1.1);
+}
+
+.iconen-grid article:focus-within {
+    outline: 2px solid var(--donkergrijs);
+    outline-offset: 3px;
+}
+
+.iconen-grid article img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.zoeken {
+    margin: 24px 0;
+}
+
+.zoeken label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.zoeken input {
+    width: 100%;
+    max-width: 450px;
+    padding: 12px;
+    border: 1px solid var(--grijsgroen);
+    border-radius: 8px;
+    font: inherit;
+}
+
+.zoeken input:focus {
+    outline: 2px solid var(--donkergrijs);
+    outline-offset: 2px;
+}
+
+.iconen-grid article img {
+    max-width: 100%;
+    height: auto;
+}
+
+.variant-knoppen label {
+    display: inline-block;
+    padding: 10px 16px;
+    margin: 4px;
+    border: 1px solid var(--grijsgroen);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.variant-knoppen input:checked + label {
+    background-color: var(--mintgroen);
+    border-color: var(--donkergrijs);
+}
+
+a img[alt="GitHub"] {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+a img[alt="GitHub"]:hover {
+    transform: scale(1.1);
+}
+
+.iconen-grid article {
+    padding: 16px;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.iconen-grid article:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.iconen-grid article img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 600px) {
+    .iconen-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .variant-knoppen {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+}
+
+/* Zoekfunctie */
+.zoeken {
+    margin: 24px 0;
+}
+
+.zoeken label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+}
+
+.zoeken input,
+.zoeken select {
+    width: 100%;
+    max-width: 450px;
+    padding: 12px;
+    border: 1px solid var(--grijs);
+    border-radius: 6px;
+    font: inherit;
+}
+
+.zoeken input:focus,
+.zoeken select:focus {
+    outline: 3px solid var(--donkergrijs);
+    outline-offset: 2px;
+}
+
+/* Recente iconen */
+.recente-iconen {
+    margin: 24px 0;
+    padding: 16px;
+    background: var(--mintgroen);
+    border-radius: 8px;
+}
+
+/* Verberg iconen die niet bij de zoekopdracht passen */
+.iconen-grid article[hidden] {
+    display: none;
+}
+
